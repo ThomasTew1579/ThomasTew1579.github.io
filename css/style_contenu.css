@@ -308,6 +308,19 @@ a {
     text-align: center;
 }
 
+.retour_presentation{
+    cursor: pointer;
+    display: none;
+    position: sticky ;
+    height: 0;
+    justify-content: end;
+    top: 100px;
+    font-size: 50px;
+    z-index: 10;
+    padding-right: 30px;
+    max-width: 900px;
+}
+
 #Mon_experience a{
     color: black;
     text-decoration:underline;

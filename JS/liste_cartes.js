@@ -40,22 +40,12 @@ let presentationMenu = document.querySelector(".S1")
 let experienceMenu = document.querySelector(".S2");
 let formationMenu = document.querySelector(".S3");
 let logicielsMenu = document.querySelector(".S4");
+let retourPresentation = document.querySelector(".retour_presentation")
+
+
 
 presentationMenu.addEventListener("click", () => {
-  for(const index in section){
-    if(index <= section.length-1){
-      section[index].style.display="none";
-    }
-  }
-  menu.style.opacity = "100%";
-  menu.style.animationDuration = "1s";
-  menu.style.animationName = "disparition_menu";
-  listeCarte.style.animationName = "apparition";
-  listeCarte.style.display="flex";
-  setTimeout(() => {
-    menu.style.display = "none";
-  }, 1000);
-
+  AfficherCartePresentation()
   if (lineMenuH.className == "line") {
     lineMenuH.className = "";
     lineMenuC.className = "";
@@ -66,6 +56,29 @@ presentationMenu.addEventListener("click", () => {
     lineMenuB.className = "line";
   }
 });
+
+retourPresentation.addEventListener("click", () => {
+  AfficherCartePresentation()
+});
+
+
+function AfficherCartePresentation (){
+  for(const index in section){
+    if(index <= section.length-1){
+      section[index].style.display="none";
+    }
+  }
+  menu.style.opacity = "100%";
+  menu.style.animationDuration = "1s";
+  menu.style.animationName = "disparition_menu";
+  listeCarte.style.animationName = "apparition";
+  listeCarte.style.display="flex";
+  retourPresentation.style.display="none"
+  setTimeout(() => {
+    menu.style.display = "none";
+  }, 1000);
+  
+}
 
 experienceMenu.addEventListener("click", () => {
   for (const index in section) {
@@ -82,6 +95,7 @@ experienceMenu.addEventListener("click", () => {
   setTimeout(() => {
     menu.style.display = "none";
     section[0].style.display = "flex";
+    retourPresentation.style.display="flex"
   }, 1000);
 
   if (lineMenuH.className == "line") {
@@ -110,6 +124,8 @@ formationMenu.addEventListener("click", () => {
   setTimeout(() => {
     menu.style.display = "none";
     section[2].style.display = "flex";
+    retourPresentation.style.display="flex"
+
   }, 1000);
 
   if (lineMenuH.className == "line") {
@@ -138,6 +154,8 @@ logicielsMenu.addEventListener("click", () => {
   setTimeout(() => {
     menu.style.display = "none";
     section[1].style.display = "flex";
+    retourPresentation.style.display="flex"
+
   }, 1000);
 
   if (lineMenuH.className == "line") {
@@ -181,7 +199,7 @@ contenuCarte[0].addEventListener("click", () => {
   setTimeout( () => { 
     listeCarte.style.display ="none";
     section[0].style.display ="flex"
-
+    retourPresentation.style.display="flex"
 },1000)
 })
 
@@ -205,6 +223,7 @@ contenuCarte[1].addEventListener("click", () => {
   setTimeout(() => {
     listeCarte.style.display = "none";
     section[1].style.display = "flex";
+    retourPresentation.style.display="flex"
   }, 1000);
 });
 
@@ -228,6 +247,7 @@ contenuCarte[2].addEventListener("click", () => {
   setTimeout(() => {
     listeCarte.style.display = "none";
     section[2].style.display = "flex";
+    retourPresentation.style.display="flex"
   }, 1000);
 });
 
