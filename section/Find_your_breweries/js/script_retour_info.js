@@ -10,8 +10,14 @@ let paysChoisie = "france";
 
 recherche(paysChoisie);
 
+window.addEventListener("keypress", function(event) {
+  if (event.key === "Enter") {
+    getValue();
+  }
+})
+
 function getValue() {
-  //let dispo = selectionPays();
+  //let dispo = selectionPays();   en cours d'optimisation (temps de chargement trop long du script pays disponible)
   let dispo = ['united states', 'ireland', 'south korea', 'england', 'france', 'scotland'];
 
   let input = document.getElementById("in").value.toLowerCase();

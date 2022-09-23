@@ -300,8 +300,12 @@ a {
     flex-direction: column;
     opacity: 0;
     animation: apparitio_section 2s ease forwards;
-    
+    font-size: 1.8vh;
     max-width: 900px ;
+}
+
+.section .titre_carte{
+    text-align: center;
 }
 
 #Mon_experience a{

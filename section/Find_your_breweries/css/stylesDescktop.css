@@ -1,4 +1,9 @@
 @media screen and (min-width: 1170px) {
+
+  body{
+    height: 100%;
+  }
+
   .desktop{
     display: flex;
     justify-content: space-between;
