@@ -14,12 +14,13 @@ btnMenu.addEventListener("click", () => {
   
   if(menu.style.display == "flex"){
     menu.style.opacity ="100%"
-    menu.style.animationDuration = "1s";
     menu.style.animationName = "disparition_menu";
-    setTimeout( () => { menu.style.display = "none"},1000)
+    menu.style.animationDuration = "0.5s";
+    setTimeout( () => { menu.style.display = "none"},500)
   }else{
     menu.style.opacity ="0%"
     menu.style.animationName = "apparition_menu";
+    menu.style.animationDuration = "0.5s";
     menu.style.display = "flex"
   }
   

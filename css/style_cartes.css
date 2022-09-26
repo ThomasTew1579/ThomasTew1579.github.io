@@ -6,7 +6,7 @@
     margin: 0;
     padding: 0;
     height: calc(100vh - 90px);
-    animation: apparition 4s ease  forwards;
+    animation: apparition 0.5s ease  forwards;
 
 }
 
@@ -24,7 +24,7 @@
 }
 
 .disparition{
-    animation: disparition 1s ease forwards;
+    animation: disparition 0.5s ease forwards;
 }
 
 @keyframes disparition {

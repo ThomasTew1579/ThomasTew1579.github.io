@@ -46,7 +46,7 @@ nav{
     padding: 0;
     font-size: 30px;
     opacity: 0;
-    animation: apparition_nav 2s ease-out forwards;
+    animation: apparition_nav 0.7s ease-out forwards;
 }
 
 @keyframes apparition_nav {
@@ -119,7 +119,7 @@ nav{
     color: #fcf3e2;
     opacity: 0;
     transition: 1s;
-    animation: 1s ease forwards;
+    animation: 0.2s ease forwards;
 
     max-width: 900px;
 }
@@ -199,7 +199,7 @@ a {
     width: 200px;
     position: relative;
     opacity: 0;
-    animation: apparition_logo 1s ease 2s forwards;
+    animation: apparition_logo 0.2s ease 1s forwards;
 }
 
 @keyframes apparition_logo {
@@ -224,19 +224,19 @@ a {
 /* apparition des LIGNES du menu --- */
 
 .L1{
-    animation: apparition_ligne 2s ease  forwards ;
+    animation: apparition_ligne 1s ease  forwards ;
 }
 .L2{
-    animation: apparition_ligne 2s ease 0.2s forwards;
+    animation: apparition_ligne 1s ease 0.1s forwards;
 }
 .L3{
-    animation: apparition_ligne 2s ease 0.4s forwards ;
+    animation: apparition_ligne 1s ease 0.2s forwards ;
 }
 .L4{
-    animation: apparition_ligne 2s ease 0.6s forwards;
+    animation: apparition_ligne 1s ease 0.3s forwards;
 }
 .L5{
-    animation: apparition_ligne 2s ease 0.8s forwards;
+    animation: apparition_ligne 1s ease 0.4s forwards;
 }
 
 @keyframes apparition_ligne {
@@ -256,19 +256,19 @@ a {
 /* apparition des SECTIONS du menu --- */
 
 .S1{
-    animation: apparition_section_menu 3s ease 1s forwards ;
+    animation: apparition_section_menu 1s ease 1s forwards ;
 }
 .S2{
-    animation: apparition_section_menu 3s ease 1.2s forwards;
+    animation: apparition_section_menu 1s ease 1.1s forwards;
 }
 .S3{
-    animation: apparition_section_menu 3s ease 1.4s forwards ;
+    animation: apparition_section_menu 1s ease 1.2s forwards ;
 }
 .S4{
-    animation: apparition_section_menu 3s ease 1.6s forwards;
+    animation: apparition_section_menu 1s ease 1.3s forwards;
 }
 .S5{
-    animation: apparition_section_menu 3s ease 1.8s forwards;
+    animation: apparition_section_menu 1s ease 1.4s forwards;
 }
 
 @keyframes apparition_section_menu {
@@ -422,7 +422,7 @@ body{
 
 .galerie .fa-youtube{
     color: rgba(255, 255, 255, 0.72);
-    font-size: 15vw;
+    font-size: 12vw;
     z-index: 15;
     right: 5px;
     height: 100%;
