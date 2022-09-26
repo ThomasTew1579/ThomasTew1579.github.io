@@ -275,16 +275,51 @@ document.querySelector('.C1').addEventListener("click", () => {
 
 //Animation galerie ============================================================
 
-let angle = 0;
-function galleryspin(sign) { 
-spinner = document.querySelector("#spinner");
-if (!sign) { 
-  angle = angle + 45; 
-  } else { 
-    angle = angle - 45; }
-  
-spinner.setAttribute("style","-webkit-transform: rotateY("+ angle +"deg); -moz-transform: rotateY("+ angle +"deg); transform: rotateY("+ angle +"deg);");
+
+
+let decalageSlide = 0;
+var decalage = 0;
+
+
+function gallerySlide (signe, nomSlider) {
+    let image = document.querySelectorAll("#"+nomSlider+" .image_galerie");
+    let slider = document.querySelector("#"+nomSlider);
+    let largeurImage = image[0].width + 20;
+    decalage = largeurImage
+
+    if (!signe) {
+        decalageSlide = decalageSlide + decalage;
+        if(decalageSlide > 0){
+            decalageSlide = decalage - image.length * decalage;
+        }
+    } else {
+        decalageSlide = decalageSlide - decalage;
+        if (decalageSlide <= image.length * -decalage) {
+          decalageSlide = 0;
+        }
+    };
+    
+    slider.style.transform ="translateX("+decalageSlide+"px)";
+
+};
+
+function regarderVideo (adresse){
+    let player = document.createElement("div");
+    player.className = "player_video";
+    player.innerHTML =
+      '<iframe width="100%" height="70%" src="https://www.youtube.com/embed/' +
+      adresse +
+      '" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><i class="fa-solid fa-x" onclick="fermerVideo()"></i>';
+      document.body.prepend(player)
 }
+
+function fermerVideo (){
+    let player = document.querySelector(".player_video");
+    player.remove();
+}
+
+
+
 
 
 
