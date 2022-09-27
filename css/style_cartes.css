@@ -131,11 +131,19 @@
     font-size: 2.5vh;
 }
 
+.contact_carte a:hover{
+    color: rgba(0, 0, 0, 0.604);
+}
+
 .lien_carte{
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
     margin: 10px;
+}
+
+.lien_carte a:hover{
+    color: rgba(0, 0, 0, 0.604);
 }
 
 /* ------------carte presentation */
