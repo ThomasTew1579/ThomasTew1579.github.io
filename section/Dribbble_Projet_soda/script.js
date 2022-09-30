@@ -8,7 +8,7 @@ let btn_next            = document.querySelector("#btn_next");
 
 let Zero_Sugar = {
     background            : "linear-gradient(64.5deg, #292929 2.1%, #1C1C1C 100.55%)",
-    image                 : "../Dribble Projet soda/images/1.png",
+    image                 : "images/1.png",
     titre                 : "Zero Sugar",
     decrpition_texte      : "Coca-Cola Zero Sugar Real Coke taste with zero calories. It's possible!",
     texte_color           : "#FFFFFF"
@@ -16,7 +16,7 @@ let Zero_Sugar = {
 
 let Vanilla = {
     background            : "linear-gradient(66.37deg, #ECE1C9 2.16%, #9F8C5C 103.37%)",
-    image                 : "../Dribble Projet soda/images/2.png",
+    image                 : "images/2.png",
     titre                 : "Vanilla",
     decrpition_texte      : "Great taste of Coca-Cola with refreshingly smooth balance of vanilla flavor.",
     texte_color           : "#000"
@@ -24,7 +24,7 @@ let Vanilla = {
 
 let Cherry = {
     background            : "linear-gradient(66.37deg, #8F355A 2.16%, #5E2438 41.61%, #2C1316 103.37%)",
-    image                 : "../Dribble Projet soda/images/3.png",
+    image                 : "images/3.png",
     titre                 : "Cherry",
     decrpition_texte      : "Great taste of Coca-Cola with a sweet, smooth cherry flavor.",
     texte_color           : "#FFFFFF"
@@ -32,7 +32,7 @@ let Cherry = {
 
 let Orange_Vanilla = {
     background            : " linear-gradient(66.37deg, #F0AE54 2.16%, #8B481E 103.37%)",
-    image                 : "../Dribble Projet soda/images/4.png",
+    image                 : "images/4.png",
     titre                 : "Orange Vanilla",
     decrpition_texte      : "Newest flavor to join the Coke family with a new twist on delicious.",
     texte_color           : "#FFFFFF"
