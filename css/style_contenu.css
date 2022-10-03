@@ -66,6 +66,10 @@ nav{
 
 /* nav/menu--------------------------------------------------------------------- */
 
+#menuLiens{
+    display: none;
+}
+
 #menuLogo{
     cursor: pointer;
     content: \000A9;
