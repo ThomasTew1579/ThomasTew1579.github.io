@@ -77,7 +77,6 @@ btnMenu.addEventListener("click", () => {
     retourPresentation.classList.replace("pasFlexX", "flexX");
     menu.style.opacity ="0%"
     menu.style.animationName = "apparition_menu";
-    menu.style.animationDuration = "0.5s";
     menu.style.display = "flex"
   }
   
@@ -94,6 +93,7 @@ presentationMenu.addEventListener("click", () => {
 
 retourPresentation.addEventListener("click", () => {
   fermerSection("m")
+  listeCarteD.classList.add("origine")
 });
 
 
