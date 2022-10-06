@@ -71,10 +71,10 @@ btnMenu.addEventListener("click", () => {
   if(menu.style.display == "flex"){
     menu.style.opacity ="100%"
     menu.style.animationName = "disparition_menu";
-    retourPresentation.classList.replace("flexX" , "pasFlexX");
+    retourPresentation.classList.replace("pasFlexX", "flexX");
     setTimeout( () => { menu.style.display = "none"},200)
   }else{
-    retourPresentation.classList.replace("pasFlexX", "flexX");
+    retourPresentation.classList.replace("flexX" , "pasFlexX");
     menu.style.opacity ="0%"
     menu.style.animationName = "apparition_menu";
     menu.style.display = "flex"
