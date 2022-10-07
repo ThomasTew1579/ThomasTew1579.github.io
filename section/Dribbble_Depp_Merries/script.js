@@ -1,4 +1,10 @@
 
+// effacer l'animation d'intro
+setTimeout(() => {
+    document.getElementById("entrer").style.display ="none";
+}, 1800)
+
+// animation des fiche musicien
 let membre = document.querySelectorAll(".membre")
 
 membre[0].addEventListener("mouseover", () => {
@@ -20,4 +26,78 @@ function changerMembre (indexMembre){
             membre[indexMembre].classList.add("grow")
         }
     }
+}
+
+
+
+// changer d'album dans le lecteur
+let albumSelect = document.getElementById("music").getElementsByClassName("select")[0]
+let lecteur = document.querySelector("#lecteur")
+let listeAlbum = document.querySelector(".listeAlbum");
+
+listeAlbum.querySelector("#WTR").addEventListener("click",() => {
+    lecteur.src ="https://open.spotify.com/embed/album/6iyo5dX3zMFtTQJHMhrtPc?utm_source=generator"
+    albumSelect.src = "https://i.scdn.co/image/ab67616d00001e02f801a7471a4bbe473730b811"
+})
+
+listeAlbum.querySelector("#Gen").addEventListener("click",() => {
+    lecteur.src ="https://open.spotify.com/embed/album/07gRPx98IAUeO7detNoJM2?utm_source=generator"
+    albumSelect.src = "https://i.scdn.co/image/ab67616d00001e029add3d305878afaa357dce0e";
+})
+
+listeAlbum.querySelector("#Night").addEventListener("click",() => {
+    lecteur.src ="https://open.spotify.com/embed/album/5Fz3fm8jthYyeN9jCRg7qx?utm_source=generator"
+    albumSelect.src = "https://i.scdn.co/image/ab67616d00001e02bc2a775d34c2a2dd000b874d";
+})
+
+listeAlbum.querySelector("#Flames").addEventListener("click",() => {
+    lecteur.src ="https://open.spotify.com/embed/album/3jc4gH3BxMnDVc7EltJBSP?utm_source=generator"
+    albumSelect.src = "https://i.scdn.co/image/ab67616d00001e02abee1c124fc5816f5322cba4";
+})
+
+
+// animation merch
+
+let color = document.getElementById("color");
+let model = document.getElementById("model");
+let galerie = document.querySelector(".galerie");
+let tshirt = document.getElementsByClassName("tshirt")
+
+let left = document.getElementById("goL");
+let right = document.getElementById("goR");
+
+
+
+    let image = 0;
+    
+    console.log(image);
+    right.addEventListener("click", () => {
+        image++
+        if(image >= 4){
+            image = 0
+            decaler(image)
+        } else {
+            decaler(image)
+        }
+    })
+    left.addEventListener("click", () => {
+        image--
+        if (image <= -1) {
+          image = 3;
+          decaler(image);
+        } else {
+          decaler(image);
+        }
+    })
+
+
+
+
+
+
+function decaler(image){
+    model.textContent ="MODEL : "+ tshirt[image].classList[1]
+    color.textContent ="COLOR : "+ tshirt[image].classList[0]
+    galerie.style.transform = "translateX(calc((-80vh * 0.9)*"+image+"))";
+ 
 }
