@@ -66,32 +66,27 @@ let tshirt = document.getElementsByClassName("tshirt")
 let left = document.getElementById("goL");
 let right = document.getElementById("goR");
 
+let image = 0;
 
 
-    let image = 0;
-    
-    console.log(image);
-    right.addEventListener("click", () => {
-        image++
-        if(image >= 4){
-            image = 0
-            decaler(image)
-        } else {
-            decaler(image)
-        }
-    })
-    left.addEventListener("click", () => {
-        image--
-        if (image <= -1) {
-          image = 3;
-          decaler(image);
-        } else {
-          decaler(image);
-        }
-    })
-
-
-
+right.addEventListener("click", () => {
+    image++
+    if(image >= 4){
+        image = 0
+        decaler(image)
+    } else {
+        decaler(image)
+    }
+})
+left.addEventListener("click", () => {
+    image--
+    if (image <= -1) {
+      image = 3;
+      decaler(image);
+    } else {
+      decaler(image);
+    }
+})
 
 
 
