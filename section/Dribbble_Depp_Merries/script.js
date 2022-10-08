@@ -66,28 +66,30 @@ let tshirt = document.getElementsByClassName("tshirt")
 let left = document.getElementById("goL");
 let right = document.getElementById("goR");
 
-let image = 0;
 
 
-right.addEventListener("click", () => {
-    image++
-    if(image >= 4){
-        image = 0
-        decaler(image)
-    } else {
-        decaler(image)
-    }
-})
-left.addEventListener("click", () => {
-    image--
-    if (image <= -1) {
-      image = 3;
-      decaler(image);
-    } else {
-      decaler(image);
-    }
-})
 
+
+    let image = 0;
+    
+    right.addEventListener("click", () => {
+        image++
+        if(image >= 4){
+            image = 0
+            decaler(image)
+        } else {
+            decaler(image)
+        }
+    })
+    left.addEventListener("click", () => {
+        image--
+        if (image <= -1) {
+          image = 3;
+          decaler(image);
+        } else {
+          decaler(image);
+        }
+    })
 
 
 function decaler(image){
@@ -95,4 +97,52 @@ function decaler(image){
     color.textContent ="COLOR : "+ tshirt[image].classList[0]
     galerie.style.transform = "translateX(calc((-80vh * 0.9)*"+image+"))";
  
+}
+
+
+// animation menu
+
+
+let nav =document.querySelector("nav")
+let main = document.querySelector("main")
+let btnMenu = document.getElementById("menu")
+
+let home = document.getElementById("goHome")
+let merch = document.getElementById("goMerch");
+let music = document.getElementById("goMusic");
+let contact = document.getElementById("goContact");
+
+btnMenu.addEventListener("click", () => {
+    ouvrirMenu()
+})
+
+home.addEventListener("click", () => {
+    fermerMenu()
+})
+
+merch.addEventListener("click", () => {
+    fermerMenu()
+})
+
+music.addEventListener("click", () => {
+    fermerMenu()
+})
+
+contact.addEventListener("click", () => {
+    fermerMenu()
+})
+
+
+
+
+
+
+function ouvrirMenu () {
+    nav.className = "menu_mobile";
+    main.className = "menu_mobile";
+}
+
+function fermerMenu () {
+    nav.classList.remove("menu_mobile");
+    main.classList.remove("menu_mobile");
 }
