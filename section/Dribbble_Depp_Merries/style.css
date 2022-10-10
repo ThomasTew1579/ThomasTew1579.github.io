@@ -144,7 +144,7 @@ section{
 
 #home {
   position: relative;
-  height: 95vh;
+  height: calc(100vh - 90px);
   padding-top: 90px;
   align-items: center;
   justify-content: space-evenly;
@@ -342,14 +342,14 @@ span{
 
 #merch{
   height: 80vh;
-  justify-content: space-between;
+  justify-content: space-evenly;
   display: flex;
   align-items: center;
   padding: 100px 0 100px 0;
 }
 
 #merch .left{
-  width: 50%;
+  width: 10%;
   height: 50%;
   display: flex;
   flex-direction: column;
@@ -476,6 +476,10 @@ span{
 @media (max-width:1200px) {
 
   /* menu----------------------------------------------- */
+
+  header{
+    height: 60px;
+  }
   
   #menu{
     display: flex;
@@ -531,12 +535,25 @@ span{
     }
 
     #home{
-      height: 80vh;
+      height: calc(100vh - 90px);
+      padding-top: 70px;
       padding-bottom: 20px;
     }
 
     #home .left {
       height: 27vw;
+      width: 100%;
+      align-items: center;
+    }
+
+    #titre :nth-child(2) span::before{
+      content: '#';
+      opacity: 0;
+    }
+    
+    #titre :nth-child(3) span::before{
+      content: '##';
+      opacity: 0;
     }
 
     #home .right{
@@ -567,23 +584,24 @@ span{
     }
 
     #music{
-      height: 150vh; 
+      height: calc(100vh - 90px); 
       justify-content: space-around;
       display: flex;
       align-items: center;
-      padding: 20px 0 20px 0;
+      padding: 40px 0 40px 0;
     }
 
     #music #lecteur{
       margin: 20px 0 20px 0;
       width: 100%;
-      height: 100%;
+      /* height: 60%; */
+      height: 310px;
     }
 
 
     #music .select{
-      width: 80vw;
-      height: 80vw;
+      width: 50vw;
+      height: 50vw;
     }
 
     .listeAlbum{
@@ -604,7 +622,7 @@ span{
 
 
     #merch{
-      height: 150vh;
+      height: 110vh;
       justify-content: space-between;
       display: flex;
       align-items: center;
@@ -613,7 +631,7 @@ span{
 
     #merch .left{
       width: 100%;
-      height: 50%;
+      height: 40%;
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -622,21 +640,25 @@ span{
     }
 
     #merch h1{
-      font-size: 4em;
+      font-size: 3em;
+      margin: 10px;
     }
 
     .apercu{
       width: 100vw;
+      height: 100vw;
     }
 
     .apercu .scroller{
       width: 100vw;
+      height: 100vw;
     }
 
 
     .galerie{
       display: flex;
       width: 100vw;
+      height: 100vw;
       transition: 0.5s;
     }
 
@@ -658,7 +680,9 @@ span{
       justify-content: space-around;
     }
 
-
+    .background{
+      display: none;
+    }
 
 
 

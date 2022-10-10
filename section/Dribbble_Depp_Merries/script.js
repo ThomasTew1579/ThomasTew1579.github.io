@@ -95,7 +95,11 @@ let right = document.getElementById("goR");
 function decaler(image){
     model.textContent ="MODEL : "+ tshirt[image].classList[1]
     color.textContent ="COLOR : "+ tshirt[image].classList[0]
-    galerie.style.transform = "translateX(calc((-80vh * 0.9)*"+image+"))";
+    if(window.innerWidth <= 1200){
+        galerie.style.transform = "translateX(calc((-100vw)*"+image+"))";
+    } else {
+        galerie.style.transform = "translateX(calc((-80vh * 0.9)*"+image+"))";
+    }
  
 }
 
