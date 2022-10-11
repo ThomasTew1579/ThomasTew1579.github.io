@@ -98,7 +98,7 @@ function decaler(image){
     if(window.innerWidth <= 1200){
         galerie.style.transform = "translateX(calc((-100vw)*"+image+"))";
     } else {
-        galerie.style.transform = "translateX(calc((-80vh * 0.9)*"+image+"))";
+        galerie.style.transform = "translateX(calc((-60vh * 0.9)*"+image+"))";
     }
  
 }
