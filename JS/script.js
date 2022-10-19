@@ -81,12 +81,14 @@ document.addEventListener("scroll", () => {
         activecroll(article[2], 2250);
         activecroll(article[3], 2750);
         activecroll(article[4], 3250);
+        activecroll(article[5], 3750);
     } else {
         activecroll(article[0], 800);
         activecroll(article[1], 1300);
         activecroll(article[2], 1800);
         activecroll(article[3], 2300);
         activecroll(article[4], 2800);
+        activecroll(article[5], 3300);
     }
     
 })
