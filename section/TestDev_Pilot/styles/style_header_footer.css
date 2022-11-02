@@ -3,7 +3,7 @@
 
 @font-face {
     font-family: 'Porpora' ;
-    src: url(/assets/fonts/Porpora-Regular\ 12.14.56.ttf);
+    src: url(assets/fonts/Porpora-Regular\ 12.14.56.ttf);
 }
 
 html{
@@ -134,7 +134,7 @@ header a{
     display: flex;
     flex-direction: row;
     justify-content: space-around ;
-    list-style: url(/assets/img/navTitleItemImage.svg);
+    list-style: url(../assets/img/navTitleItemImage.svg);
     padding-left: 5%;
     padding-right: 5%;
 }
@@ -236,7 +236,7 @@ footer{
     flex-direction: column;
     width: 100%;
     height: 436px;
-    background-image: url(/assets/img/shapes-footer.png);
+    background-image: url(../assets/img/shapes-footer.png);
     background-repeat: no-repeat;
     background-position: right 0% top 15%;
 }
