@@ -198,7 +198,7 @@ nav a:nth-child(1){
 .scrollLogo{
     position: absolute;
     bottom: 2.5%;
-    left: 50%;
+    left: 49%;
     animation: scroll_me 0.8s infinite alternate ;
 }
 
