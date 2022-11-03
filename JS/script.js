@@ -3,11 +3,14 @@ let header = document.querySelector("header")
 let nav = document.querySelector("nav");
 let liensNav = nav.querySelectorAll("a");
 
+
 function activeMenu () {
-    if (header.classList.contains("active")) {
-        header.classList.replace("active", "desactive");
-    } else {
-        header.classList.replace("desactive", "active");
+    if(innerWidth <= 1000){
+        if (header.classList.contains("active")) {
+            header.classList.replace("active", "desactive");
+        } else {
+            header.classList.replace("desactive", "active");
+        }
     }
   }
 
@@ -82,6 +85,7 @@ document.addEventListener("scroll", () => {
         activecroll(article[3], 2750);
         activecroll(article[4], 3250);
         activecroll(article[5], 3750);
+        activecroll(article[6], 4250);
     } else {
         activecroll(article[0], 800);
         activecroll(article[1], 1300);
@@ -89,6 +93,7 @@ document.addEventListener("scroll", () => {
         activecroll(article[3], 2300);
         activecroll(article[4], 2800);
         activecroll(article[5], 3300);
+        activecroll(article[6], 3800);
     }
     
 })
