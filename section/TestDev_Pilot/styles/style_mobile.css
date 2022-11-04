@@ -1,6 +1,11 @@
 @media screen and (max-width:1200px) {
 
 
+    #navHeader{
+        display: none;
+    }
+
+
     #meetTheFutur{
         height: 1600px;
         justify-content: flex-start;
@@ -69,12 +74,12 @@
     }
 
     #trust .left{
-        height: 100vw;
+        width: 100%;
     }
 
     #trust .right{
         width: 90%;
-        height: 400px;
+        height: 500px;
     }
 
     #article  h3{
@@ -92,6 +97,12 @@
         margin-right: auto;
     }
 
+    #article h1{
+    text-align: center;
+    font-size: 40px;
+
+}
+
     article p{
         width: 90%;
     }
@@ -106,7 +117,7 @@
     }
 
     footer{
-    height: 70%;
+    height: 100%;
     background-position: right 0% bottom 0%;
 }
 
@@ -142,4 +153,56 @@
     #meetTheFutur h1{
     font-size: 10vw;
    }
+   #meetTheFutur{
+           height: 1400px;
+       }
+
+    .text h1{
+    font-size: 25px;
+    }
+
+    .text{
+        margin-left: 24px ;
+    }
+
+    .text h1 img{
+        height: 25px;
+    }
+    
+    #challenge li {   
+    height: 84px;
+    font-weight: 500;
+    font-size: 1em;
+    }
+
+    #challenge li i{
+    margin: 5px;
+    }
+
+    #trust .right p{
+
+    font-size: 25px;
+
+    width: 100%;
+    margin-bottom: 10px;
+    margin-top: 0;
+    }
+
+    .author i {
+    height: 40px;
+    line-height: 2;
+}
+#ready h1{
+    font-weight: 500;
+    font-size: 35px;
+}
+
+#ready h2{
+    line-height: 40px;
+    width: 100%;
+}
+
+#ready img{
+    width: 100%;
+}
 }
