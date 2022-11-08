@@ -164,7 +164,11 @@ header a{
     content: url(../assets/img/navTitleItemImage.svg);
     margin-right: 10px;
 }
-
+ .burger{
+    font-size: 30px;
+    margin: 15px;
+    cursor: pointer;
+ }
 
 #button{    
     display: flex;
