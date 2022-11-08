@@ -81,93 +81,105 @@ let exk = document.querySelector("#exk");
 let ditp = document.querySelector("#ditp");
 let bnp = document.querySelector("#bnp");
 
+
+
+
+let exkiContent ={
+  video:             "assets/img/Casclient-Exki.jpg",
+  img:               "assets/img/EXKi-2.png",
+  author:            "Thierry Soubestre",
+  text:              "In a few weeks, 5 critical financial data sources were integrated and information is now available every day.",
+}
+
+let ditpContent = {
+  video:             "assets/img/Casclient-DITP.jpg",
+  img:               "assets/img/ditp.png",
+  author:            "Bruno Parent",
+  text:              "With propilot, we are able to share information in real time and use this effectively to steer the covid19 recovery plan across all ministries ",
+}
+
+let bnpContent ={
+  video:             "assets/img/Casclient-BNPParibas.jpg",
+  img:               "assets/img/bnp-paribas.png",
+  author:            "Hervé Gouëzel",
+  text:              "The solutions offered by Pilot'in let us keep control of our plan. In the end, we were able to largely surpass our initial objectives.",
+}
+
+let listContent = [exkiContent, ditpContent, bnpContent ];
+
 let index = 0;
 
-let content = [
-  {
-    video: "assets/img/Casclient-Exki.jpg",
-    img: "assets/img/EXKi-2.png",
-    author: "Thierry Soubestre",
-    text: "In a few weeks, 5 critical financial data sources were integrated and information is now available every day.",
-  },
-  {
-    video: "assets/img/Casclient-DITP.jpg",
-    img: "assets/img/ditp.png",
-    author: "Bruno Parent",
-    text: "With propilot, we are able to share information in real time and use this effectively to steer the covid19 recovery plan across all ministries ",
-  },
-  {
-    video: "assets/img/Casclient-BNPParibas.jpg",
-    img: "assets/img/bnp-paribas.png",
-    author: "Hervé Gouëzel",
-    text: "The solutions offered by Pilot'in let us keep control of our plan. In the end, we were able to largely surpass our initial objectives.",
-  },
-];
 
 right.addEventListener("click", () => {
-  counter("+");
+  next("+");
 });
 
 left.addEventListener("click", () => {
-  counter("-");
+  next("-");
 });
 
-function showContent() {
-  img.classList.replace("unactive", "active");
-  author.classList.replace("unactive", "active");
-  text.classList.replace("unactive", "active");
-}
-
-function changeContent(index) {
-  img.src = content[index].img;
-  author.textContent = content[index].author;
-  text.textContent = content[index].text;
-  video.src = content[index].video;
-}
-
-function counter(signe) {
-  img.classList.replace("active", "unactive");
-  author.classList.replace("active", "unactive");
-  text.classList.replace("active", "unactive");
-
-  counterCard[0].classList.replace("active", "unactive");
-  counterCard[1].classList.replace("active", "unactive");
-  counterCard[2].classList.replace("active", "unactive");
-
+function next(signe) {
+  video.style.opacity = "0";
+  img.style.opacity = "0";
+  author.style.opacity = "0";
+  text.style.opacity = "0";
   if (signe == "+") {
-    video.classList.remove("activeR");
-    video.classList.remove("activeL");
-    video.classList.add("unactiveR");
-
     index++;
-
-    if (index >= content.length) {
+    if (index >= listContent.length) {
       index = 0;
     }
-
-    counterCard[index].classList.replace("unactive", "active");
-    setTimeout(() => {
-      changeContent(index);
-      showContent();
-      return;
-    }, 100);
+    unactive("right");
+    active(index, "right");
+    changeText(index);
+    return;
   }
-
   if (signe == "-") {
-    video.classList.remove("activeR");
-    video.classList.remove("activeL");
-    video.classList.add("unactiveL");
-
     index--;
     if (index < 0) {
-      index = content.length - 1;
+      index = listContent.length - 1;
     }
-    console.log(index);
-    counterCard[index].classList.replace("unactive", "active");
-    setTimeout(() => {
-      showContent();
-    }, 500);
+    unactive("left");
+    active(index, "left");
+    changeText(index);
+    return;
   }
 }
+
+function unactive(sens) {
+  video.className = "disparition_" + sens;
+  img.className = "disparition_" + sens;
+  author.className = "disparition_" + sens;
+  text.className = "disparition_" + sens;
+}
+
+function active(indexContent, sens) {
+  setTimeout(() => {
+    video.src = listContent[indexContent].video;
+    img.src = listContent[indexContent].img;
+    author.textContent = listContent[indexContent].author;
+    text.textContent = listContent[indexContent].text;
+    video.className = "apparition_" + sens;
+    img.className = "apparition_" + sens;
+    author.className = "apparition_" + sens;
+    text.className = "apparition_" + sens;
+  }, 200);
+}
+
+function changeText(indexContent) {
+  setTimeout (() =>{
+    video.src= listContent[indexContent].video
+    img.src= listContent[indexContent].img
+    author.textContent = listContent[indexContent].author;
+    text.textContent = listContent[indexContent].text;
+  },200) 
+  
+  for (const index in counterCard) {
+    if (index <= index.length + 1) {
+      counterCard[index].classList.replace("active", "unactive");
+    }
+  }
+  counterCard[indexContent].classList.replace("unactive", "active");
+}
+
 
 //----------------------------------------------------------------------gallery

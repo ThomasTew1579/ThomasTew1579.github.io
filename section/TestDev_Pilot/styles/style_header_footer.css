@@ -161,7 +161,7 @@ header a{
 }
 
 .sectionNavTitleItem::before{
-    content: url(assets/img/navTitleItemImage.svg);
+    content: url(../assets/img/navTitleItemImage.svg);
     margin-right: 10px;
 }
 
@@ -260,7 +260,7 @@ footer{
     flex-direction: column;
     width: 100%;
     height: 436px;
-    background-image: url(assets/img/shapes-footer.png);
+    background-image: url(../assets/img/shapes-footer.png);
     background-repeat: no-repeat;
     background-position: right 0% top 15%;
 }

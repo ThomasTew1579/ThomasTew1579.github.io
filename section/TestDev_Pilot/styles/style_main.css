@@ -380,7 +380,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    background: url(/assets/img/shape-dot-white-bg.png);
+    background: url(../assets/img/shape-dot-white-bg.png);
     background-repeat: no-repeat;
     background-position: right 0;
     padding-bottom: 50px;
@@ -431,7 +431,6 @@
 }
 
 
-
 #player{
     position: absolute;
     z-index: 2;
@@ -444,58 +443,68 @@
     transform: translateX(-70px);
 }
 
-#galleryVideo.activeR{
-    animation: activeImgR 1s ease forwards;
-}
-
-#galleryVideo.activeL{
-    animation: activeImgL 1s ease forwards;
-}
-
-#galleryVideo.unactiveR{
-    animation: unactiveImgL 1s ease forwards reverse;
-}
-
-#galleryVideo.unactiveL{
-    animation: unactiveImgR 1s ease forwards reverse;
-}
 
 
-@keyframes activeImgR {
-   from{
-    transform: translateX(1000%);
-} 
-to{
-    transform: translateX(0%);
-   }
+.apparition_right{
+    animation: apparition_right 0.6s ease forwards ;
 }
 
-@keyframes activeImgL {
-   from{
-    background-position: -10000%;
-} 
-to{
-    background-position: 0%;
-   }
+.apparition_left{
+    animation: apparition_left 0.6s ease  forwards;
 }
 
-@keyframes unactiveImgR {
-   from{
-    transform: translateX(1000%);
-} 
-to{
-    transform: translateX(0%);
-   }
+.disparition_right{
+    animation: disparition_right 0.6s ease  forwards;
 }
 
-@keyframes unactiveImgL {
-   from{
-    background-position: -10000%;
-} 
-to{
-    background-position: 0%;
-   }
+.disparition_left{
+    animation: disparition_left 0.6s ease  forwards;
 }
+
+@keyframes apparition_right {
+    from{
+        opacity: 0;
+        transform: translateX(100%);
+    }
+    to{
+        opacity: 100%;
+        transform: translateY(0%);
+    }
+}
+
+@keyframes apparition_left {
+    from{
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+    to{
+        opacity: 100%;
+        transform: translateY(0%);
+    }
+}
+
+@keyframes disparition_right {
+    from{
+        opacity: 100%;
+        transform: translateY(0%);
+    }
+    to{
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+}
+
+@keyframes disparition_left {
+    from{
+        opacity: 100%;
+        transform: translateY(0%);
+    }
+    to{
+        opacity: 0;
+        transform: translateX(100%);
+    }
+}
+
 
 #counterCard {
     display: flex;
@@ -512,6 +521,7 @@ to{
     margin-right: 10px;
     flex-grow: 0;
     transition: 0.3s;
+    margin-bottom: 20px;
 }
 
 #counterCard .active{
@@ -532,47 +542,6 @@ to{
 }
 
 
-#galleryImg.active{
-    animation: activeContent 1s  forwards;
-    opacity: 0;
-}
-
-#galleryAuthor.active{
-    animation: activeContent 1s 0.1s forwards;
-    opacity: 0;
-}
-
-#galleryText.active{
-    animation: activeContent 1s 0.2s  forwards;
-    opacity: 0;
-}
-
-#galleryImg.unactive{
-    animation: activeContent 1s ease forwards reverse;
-    opacity: 100%;
-}
-
-#galleryAuthor.unactive{
-    animation: activeContent 1s ease  0.1s forwards reverse;
-    opacity: 100%;
-}
-
-#galleryText.unactive{
-    animation: activeContent 1s ease 0.2s forwards reverse;
-    opacity: 100%;
-}
-
-
-
-@keyframes activeContent {
-    from{
-        opacity: 0%;
-    }
-    to{
-        opacity: 100%;
-    }
-}
-
 #trust .right{
     height: 70%;
     width: 50%;
@@ -580,6 +549,7 @@ to{
 }
 
 #trust .right .content{
+    overflow: hidden;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -600,9 +570,11 @@ to{
     font-size: 36px;
     line-height: 40px;
     color: #FFFFFF;
-    width: 500px;
     margin-bottom: 10px;
     margin-top: 0;
+    margin-right: 150px;
+    overflow: hidden;
+
 }
 
 #trust .right i {
