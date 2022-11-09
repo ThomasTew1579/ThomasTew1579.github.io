@@ -294,8 +294,6 @@
     background-color: rgb(255, 255, 255);
 }
 
-
-
 #challenge li i{
     margin: 16px;
     background-color: #F0FDFF;
@@ -463,48 +461,39 @@
 
 @keyframes apparition_right {
     from{
-        opacity: 0;
-        transform: translateX(100%);
+        transform: translateX(200%);
     }
     to{
-        opacity: 100%;
         transform: translateY(0%);
     }
 }
 
 @keyframes apparition_left {
     from{
-        opacity: 0;
-        transform: translateX(-100%);
+        transform: translateX(-200%);
     }
     to{
-        opacity: 100%;
         transform: translateY(0%);
     }
 }
 
 @keyframes disparition_right {
     from{
-        opacity: 100%;
         transform: translateY(0%);
     }
     to{
-        opacity: 0;
-        transform: translateX(-100%);
+        transform: translateX(-200%);
     }
 }
 
 @keyframes disparition_left {
     from{
-        opacity: 100%;
         transform: translateY(0%);
     }
     to{
-        opacity: 0;
-        transform: translateX(100%);
+        transform: translateX(200%);
     }
 }
-
 
 #counterCard {
     display: flex;
@@ -541,7 +530,6 @@
     scale: 1.5;
 }
 
-
 #trust .right{
     height: 70%;
     width: 50%;
@@ -574,7 +562,6 @@
     margin-top: 0;
     margin-right: 150px;
     overflow: hidden;
-
 }
 
 #trust .right i {
@@ -593,6 +580,7 @@
 
 #trust .right i:hover{
     background-color: white;
+    color: #000;
 }
 
 
@@ -863,18 +851,6 @@ article .author{
     transition: 1s;
 }
 
-
-
 /* -----------------------------------------------------------------------------------------parallaxe */
-
-
-
-
-
-
-
-
-
-
 
     /* ======================================================================main */

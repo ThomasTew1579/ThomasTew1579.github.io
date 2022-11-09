@@ -172,10 +172,6 @@ left.addEventListener("click", () => {
 });
 
 function next(signe) {
-  video.style.opacity = "0";
-  img.style.opacity = "0";
-  author.style.opacity = "0";
-  text.style.opacity = "0";
   if (signe == "+") {
     index++;
     if (index >= listContent.length) {

@@ -1,4 +1,6 @@
 @media screen and (max-width:1200px) {
+
+    /* header----------------------------------------------------- */
     header{
         z-index: 99;
     }
@@ -89,7 +91,7 @@
         margin : 10px 0 10px 0; 
     }
 
-    
+    /* meet the futur------------------------------------------------------------- */
 
     #meetTheFutur{
         height: 1600px;
@@ -110,11 +112,13 @@
 
    #meetTheFutur .right img{
     height: 60vw ;
-}
+    }
 
-.logoClients img{
-    width: 15vw;
-}
+    .logoClients img{
+        width: 15vw;
+    }
+
+    /* chaos---------------------------------------------------------------------- */
 
    #chaos .content{
     flex-direction: column;
@@ -131,6 +135,8 @@
     #chaos img{
     display: none;
     }
+
+    /* challenge------------------------------------------------------------------ */
 
     #challenge{
         padding-top: 50px;
@@ -153,8 +159,9 @@
     #propilot .illustration{
     right: 0;
     height: 100vw;
-    
     }
+
+    /* trust---------------------------------------------------------------------- */
 
 
     #trust .card{
@@ -170,6 +177,11 @@
         width: 90%;
         height: 500px;
     }
+    #trust .right i:hover{
+    background-color: rgba(255, 255, 255, 0);
+    }
+
+    /* article--------------------------------------------------------------------- */
 
     #article{
         margin: 0;
@@ -200,6 +212,8 @@
         width: 90%;
     }
 
+    /* ready------------------------------------------------------------------------- */
+
     #ready .card{
         flex-direction: column;
         height: auto;
@@ -209,12 +223,13 @@
         margin-left: 20px;
     }
 
+    /* footer-------------------------------------------------------------------- */
+
     footer{
     height: auto;
     padding-bottom: 60px;
     background-position: right 0% bottom 0%;
-}
-
+    }
 
     #navFooter ul{
         flex-direction: column;
@@ -238,15 +253,15 @@
         margin: 20px;
     }
 
-
-   
 }
 
 
+/* =============================================================================== */
+
 @media screen and (max-width:590px){
+    /* header-------------------------------------------------------------- */
     #button div{
         display: none;
-        /* background-color: red;  */
         position: fixed;
         bottom: -50px;
         right: 50vw;
@@ -272,10 +287,13 @@
         height: 1.5em;
     }
 
+    /* meet the futur----------------------------------------------------------- */
+
     #meetTheFutur h1{
     font-size: 10vw;
-   }
-   #meetTheFutur{
+    }
+
+    #meetTheFutur{
            height: 1400px;
        }
 
@@ -290,6 +308,8 @@
     .text h1 img{
         height: 25px;
     }
+
+    /* challenge----------------------------------------------------------------- */
     
     #challenge li {   
     height: 84px;
@@ -300,6 +320,8 @@
     #challenge li i{
     margin: 5px;
     }
+
+    /* trust-------------------------------------------------------------------- */
 
     #trust .right p{
 
@@ -313,18 +335,21 @@
     .author i {
     height: 40px;
     line-height: 2;
-}
-#ready h1{
-    font-weight: 500;
-    font-size: 35px;
-}
+    }
 
-#ready h2{
-    line-height: 40px;
-    width: 100%;
-}
+    /* ready------------------------------------------------------------------- */
+    
+    #ready h1{
+        font-weight: 500;
+        font-size: 35px;
+    }
 
-#ready img{
-    width: 100%;
-}
+    #ready h2{
+        line-height: 40px;
+        width: 100%;
+    }
+
+    #ready img{
+        width: 100%;
+    }
 }
