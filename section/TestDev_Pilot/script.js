@@ -4,45 +4,98 @@ let header = document.querySelector("header");
 let product = document.querySelector("#products");
 let ressource = document.querySelector("#ressource");
 let navList = document.querySelectorAll(".navList li");
+let nav = document.querySelector("#navHeader");
+let demo = document.querySelector(".demo");
+let langage = document.querySelector("#langage");
+
+let burger = document.querySelector(".burger");
+let closeX = document.querySelectorAll("#close");
+
+
+burger.addEventListener("click", () =>{
+  if (burger.classList.contains("fa-xmark")) {
+    burger.classList.replace("fa-xmark","fa-bars" );
+    nav.classList.replace("active", "unactive");
+    demo.classList.replace("active", "unactive");
+    langage.classList.replace("active", "unactive");
+  } else {
+    burger.classList.replace("fa-bars", "fa-xmark");
+    nav.classList.replace("unactive", "active");
+    demo.classList.replace("unactive", "active");
+    langage.classList.replace("unactive", "active");
+  }
+})
+
+closeX[0].addEventListener("click", () =>{
+  navUnactive(product);
+  navUnactive(ressource);
+})
+
+closeX[1].addEventListener("click", () =>{
+  navUnactive(product);
+  navUnactive(ressource);
+})
 
 let mouse = document.addEventListener("mousemove", function mouse(e) {
   mouseY = e.clientY;
   if (mouseY > 345) {
+    if(innerWidth >= 1200){
     navUnactive(product);
     navUnactive(ressource);
+    }
   }
 });
 
 function navActive(section) {
-  header.classList.replace("unactive", "active");
-  product.classList.replace("active", "unactive");
-  ressource.classList.replace("active", "unactive");
-  if (section != undefined) {
-    section.classList.replace("unactive", "active");
-  }
+    header.classList.replace("unactive", "active");
+    product.classList.replace("active", "unactive");
+    ressource.classList.replace("active", "unactive");
+    if (section != undefined) {
+      section.classList.replace("unactive", "active");
+    }
 }
 
 function navUnactive(section) {
-  setTimeout(() => {
-    header.classList.replace("active", "unactive");
-  }, 150);
+    setTimeout(() => {
+      header.classList.replace("active", "unactive");
+    }, 150);
   if (section != undefined) {
     section.classList.replace("active", "unactive");
   }
+
 }
 
-navList[0].addEventListener("mouseenter", () => {
-  navActive(products);
-});
+  navList[0].addEventListener("click", () => {
+    if(innerWidth <= 1200){
+      navActive(products);
+      }
+    });
 
-navList[1].addEventListener("mouseenter", () => {
-  navActive(ressource);
-});
+  navList[1].addEventListener("click", () => {
+    if(innerWidth <= 1200){
+      navActive(ressource);
+      }
+    });
 
-navList[2].addEventListener("mouseenter", () => {
-  navActive();
-});
-
+    
+    navList[0].addEventListener("mouseenter", () => {
+        if(innerWidth >= 1200){
+        navActive(products);
+      }
+    });
+  
+  navList[1].addEventListener("mouseenter", () => {
+    if(innerWidth >= 1200){
+      navActive(ressource);
+    }
+  });
+  
+  navList[2].addEventListener("mouseenter", () => {
+    if(innerWidth >= 1200){
+    navActive();
+    }
+  });
+    
 // -------------------------------------------------------------------------nav
 
 // parallaxe-------------------------------------------------------------------

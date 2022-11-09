@@ -73,6 +73,10 @@ header a{
     fill: #122087;
 }
 
+.burger{
+        display: none;
+    }
+
 .navList{
     display: flex;
     flex-direction: row;
@@ -116,11 +120,15 @@ header a{
     width: 100%;
     flex-direction: column;
     padding: 0;
-    transform: translateY(-500px);
+    transform: translateY(-1000px);
     transition: 0.4s 0.1s;
     border-radius: 0px 0px 5px 5px;
     box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.422);
 }
+
+.sectionNav i{
+        display: none;
+    }
 
 .sectionNav.active {
     transform: translateY(0);
@@ -140,7 +148,6 @@ header a{
     padding-left: 5%;
     padding-right: 5%;
     margin-bottom: 60px;
-    
 }
 
 .sectionNavItem{
@@ -168,6 +175,7 @@ header a{
     font-size: 30px;
     margin: 15px;
     cursor: pointer;
+    display: none;
  }
 
 #button{    
