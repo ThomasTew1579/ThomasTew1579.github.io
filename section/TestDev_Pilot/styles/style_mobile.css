@@ -56,16 +56,12 @@
         background-color: #072038f3;
 
     }
-
-    .burger{
-        display: flex;
-    }
-
+    
     .sectionNav{
         height: calc(100vh - 86px);
         z-index: 100;
     }
-
+    
     .sectionNav i{
         position: fixed;
         color: #000;
@@ -75,38 +71,42 @@
         display: block;
         cursor: pointer;
     }
-
+    
     .sectionNavList{
         padding: 0;
         display: flex;
         flex-direction: column;
     }
-
+    
     .sectionNavItem{
         padding-top: 10px;
         padding: auto;
     }
-
+    
     .sectionNavTitleItem, .sectionNavContentItem {
         margin : 10px 0 10px 0; 
     }
+    
+    i.burger::before{
+        display: block;
+    }
 
     /* meet the futur------------------------------------------------------------- */
-
+    
     #meetTheFutur{
         height: 1600px;
         justify-content: flex-start;
     }
-
-   #meetTheFutur .content{
-    flex-direction: column;
-    justify-content: space-between;
-    width: 90vw;
-    height: auto;
-   }
-
-   #meetTheFutur .left{
-    width: 100%;
+    
+    #meetTheFutur .content{
+        flex-direction: column;
+        justify-content: space-between;
+        width: 90vw;
+        height: auto;
+    }
+    
+    #meetTheFutur .left{
+        width: 100%;
     height: 700px;
    }
 

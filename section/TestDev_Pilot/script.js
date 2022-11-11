@@ -29,11 +29,13 @@ burger.addEventListener("click", () =>{
 closeX[0].addEventListener("click", () =>{
   navUnactive(product);
   navUnactive(ressource);
+  burger.style.display = "block";
 })
 
 closeX[1].addEventListener("click", () =>{
   navUnactive(product);
   navUnactive(ressource);
+  burger.style.display = "block";
 })
 
 let mouse = document.addEventListener("mousemove", function mouse(e) {
@@ -47,33 +49,34 @@ let mouse = document.addEventListener("mousemove", function mouse(e) {
 });
 
 function navActive(section) {
-    header.classList.replace("unactive", "active");
-    product.classList.replace("active", "unactive");
-    ressource.classList.replace("active", "unactive");
-    if (section != undefined) {
-      section.classList.replace("unactive", "active");
-    }
+  header.classList.replace("unactive", "active");
+  product.classList.replace("active", "unactive");
+  ressource.classList.replace("active", "unactive");
+  if (section != undefined) {
+    section.classList.replace("unactive", "active");
+  }
 }
 
 function navUnactive(section) {
-    setTimeout(() => {
-      header.classList.replace("active", "unactive");
-    }, 150);
+  setTimeout(() => {
+    header.classList.replace("active", "unactive");
+  }, 150);
   if (section != undefined) {
     section.classList.replace("active", "unactive");
   }
-
 }
 
-  navList[0].addEventListener("click", () => {
-    if(innerWidth <= 1200){
-      navActive(products);
-      }
-    });
+navList[0].addEventListener("click", () => {
+  if(innerWidth <= 1200){
+    navActive(products);
+    burger.style.display ="none"
+  }
+});
 
-  navList[1].addEventListener("click", () => {
-    if(innerWidth <= 1200){
-      navActive(ressource);
+navList[1].addEventListener("click", () => {
+  if(innerWidth <= 1200){
+    navActive(ressource);
+    burger.style.display ="none"
       }
     });
 
