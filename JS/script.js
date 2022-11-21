@@ -86,6 +86,7 @@ document.addEventListener("scroll", () => {
         activecroll(article[4], 3250);
         activecroll(article[5], 3750);
         activecroll(article[6], 4250);
+        activecroll(article[7], 4750);
     } else {
         activecroll(article[0], 800);
         activecroll(article[1], 1300);
@@ -94,6 +95,7 @@ document.addEventListener("scroll", () => {
         activecroll(article[4], 2800);
         activecroll(article[5], 3300);
         activecroll(article[6], 3800);
+        activecroll(article[7], 4300);
     }
     
 })
