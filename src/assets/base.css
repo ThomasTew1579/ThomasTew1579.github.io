@@ -2,6 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+    font-family: 'Mustica Pro' ;
+    src: url(/src/assets/font/MusticaPro-SemiBold.woff2);
+}
+
 body {
     --primary-200:#81b6f2 ;
     --primary-600:#233A5F ;
