@@ -117,8 +117,9 @@ document.addEventListener("DOMContentLoaded", function () {
 <style scoped>
 
 .menu {
+    @apply opacity-0 duration-150;
     &.scroll-default {
-        @apply lg:absolute;
+        @apply lg:absolute opacity-100;
         .wrapper {
             @apply container mx-auto px-2;
             .links {
@@ -135,9 +136,9 @@ document.addEventListener("DOMContentLoaded", function () {
 
     &.scroll-down,
     &.scroll-up {
-        @apply fixed ;
+        @apply fixed opacity-100;
         .wrapper {
-            @apply backdrop-blur-sm bg-black/30 hover:backdrop-blur-md;
+            @apply backdrop-blur-sm bg-black/30 hover:backdrop-blur-md duration-200;
             .links {
                 @apply container mx-auto px-2 ;
             }
