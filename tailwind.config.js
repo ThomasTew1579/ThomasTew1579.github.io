@@ -10,6 +10,10 @@ export default {
         "primary-900": '#252773',
         "primary-gradient": "linear-gradient(240deg, rgba(84,58,183,1) 0%, rgba(0,172,193,1) 100%)",
         "damier": '#6d9fbe',
+      },
+      fontFamily: {
+        "primary": 'Mustica Pro',
+        "secondary": 'Roboto',
       }
     },
   },

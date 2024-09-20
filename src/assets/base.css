@@ -22,66 +22,23 @@ body {
         --hero-height:130vh;
     }
 
-    .font-primary {
-        font-family: 'Mustica Pro';
-    }
-    .font-secondary {
-        font-family: 'Roboto';
-    }
     .title-1 {
-        font-family: 'Mustica Pro';
-        font-size: 8vw;
-        margin-block:0;
-        line-height: 1;
+        @apply font-primary text-[8vw] mx-0 leading-none;
     }
     .title-2 {
-        font-family: 'Mustica Pro';
-        font-size: 100px;
-        font-weight: 700;
-        margin-block:0;
-        line-height: 1;
+        @apply font-primary text-[80px] md:text-[100px] font-bold mx-0 leading-none;
     }
     .title-3 {
-        font-family: 'Mustica Pro';
-        font-size: 6vw;
-        margin-block:0;
-        line-height: 1;
+        @apply font-primary text-[870px] md:text-[6vw] mx-0 leading-none;
     }
     .title-4 {
-        font-family: 'Mustica Pro';
-        font-size: 80px;
-        margin-block:0;
-        line-height: 1;
+        @apply font-primary text-[60px] md:text-[80px] mx-0 leading-none;
     }
     .title-5 {
-        font-size: 70px;
-        margin-block:0;
-        line-height: 1;
+        @apply font-primary text-[50px] md:text-[70px] mx-0 leading-none;
     }
     .title-6 {
-        font-size: 40px;
-        margin-block:0;
-        line-height: 1;
-    }
-    @media (max-width:768px) {
-        .title-1 {
-            font-size: 8vw;
-        }
-        .title-2 {
-            font-size: 80px;
-        }
-        .title-3 {
-            font-size: 70px;
-        }
-        .title-4 {
-            font-size: 60px;
-        }
-        .title-5 {
-            font-size: 50px;
-        }
-        .title-6 {
-            font-size: 20px;
-        }
+        @apply text-[20px] md:text-[40px] mx-0 leading-none;
     }
     .container {
         margin-inline: auto;
