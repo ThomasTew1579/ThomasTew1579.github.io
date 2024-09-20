@@ -43,12 +43,10 @@ document.addEventListener("DOMContentLoaded", function () {
 
         if (st > lastScrollTop && st > menu.getBoundingClientRect().height) {
             // Scroll Down
-            console.log("down")
             menu.classList.remove("scroll-default", "scroll-up");
             menu.classList.add("scroll-down");
         } else {
             // Scroll Up
-            console.log("up")
 
             if (st < menu.getBoundingClientRect().height) {
                 menu.style.setProperty("transition", "0s")
@@ -61,7 +59,6 @@ document.addEventListener("DOMContentLoaded", function () {
             }
         }
         lastScrollTop = st;
-        console.log(st)
     }
 
     menu.classList.add("scroll-default");
