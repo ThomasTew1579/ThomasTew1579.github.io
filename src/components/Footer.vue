@@ -1,59 +1,54 @@
 <script>
 import ButtonSecondary from './button/ButtonSecondary.vue';
+import FooterItem from './button/FooterItem.vue';
 export default {
     name : "Footer",
     components: {
         ButtonSecondary,
+        FooterItem,
     }
  }
-
 </script>
-
 
 <template>
     <foooter class="footer overflow-hidden relative w-full">
         <div class="container">
-            <div class="content grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 p-10 bg-primary-900 text-white rounded-t-2xl md:pb-20">
+            <div class="content grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 p-10 bg-primary-900 text-white rounded-t-2xl md:pb-20">
                 <div class="col-1">
                     <strong class="title-5">
                         Thomas Pasquet
                     </strong>
                     <p class="mt-4">Developeur Front-end</p>
                 </div>
-                <div class="col-2 ml-auto">
-                    <strong>
-                        Liens
-                    </strong>
-                </div>
                 <div class="col-3 ml-auto flex flex-col gap-2">
-                    <strong>
+                    <strong class="text-xl mb-2">
                         Liens
                     </strong>
-                    <!-- <a class="link" href="mailto:pasquet.thomas69@gmail.com" class="mail">Qui suis-je ?</a>
-                    <a class="link" href="mailto:pasquet.thomas69@gmail.com" class="mail">Réalisations</a>
-                    <a class="link" href="mailto:pasquet.thomas69@gmail.com" class="mail">Experiences</a>
-                    <a class="link" href="mailto:pasquet.thomas69@gmail.com" class="mail">Formation</a> -->
+                    <FooterItem title="Qui suis-je ?" link="/#cta-contact" />                        
+                    <FooterItem title="Réalisations" link="/#cta-contact" />                        
+                    <FooterItem title="Experiences" link="/#cta-contact" />                        
+                    <FooterItem title="Formation" link="/#cta-contact" />    
                 </div>
                 <div class="col-4 ml-auto flex flex-col gap-2">
-                    <strong>
+                    <strong class="text-xl mb-2">
                         Contact
                     </strong>
-                    <!-- <a class="link" href="mailto:pasquet.thomas69@gmail.com" class="mail">pasquet.thomas69@gmail.com</a>
-                    <a class="link" href="tel:+33781598200" class="mail">07 81 59 82 00</a> -->
+                    <FooterItem title="pasquet.thomas69@gmail.com" link="mailto:pasquet.thomas69@gmail.com" /> 
+                    <FooterItem title="07 81 59 82 00" link="tel:+33781598200" /> 
                     <div class="reseaux flex flex-row gap-2">
                         <a href="" class="github">
                             <svg viewBox="0 0 40 40" class="h-10 w-10 fill-current transition-all duration-100 rounded-full outline outline-0 outline-white hover:outline-1">
-                                <!-- <use xlink:href="/src/sprite/fab.svg#github" width="26" x="7" /> -->
+                                <use href="/src/assets/sprite/fab.svg#github" width="26" x="7" />
                             </svg>
                         </a>
                         <a href="" class="linkedin">
                             <svg viewBox="0 0 40 40" class="h-10 w-10 fill-current transition-all duration-100 rounded-full outline outline-0 outline-white hover:outline-1">
-                                <!-- <use xlink:href="/src/sprite/fab.svg#linkedin" width="26" x="7" /> -->
+                                <use href="/src/assets/sprite/fab.svg#linkedin" width="26" x="7" />
                             </svg>
                         </a>
                         <a href="" class="insta">
                             <svg viewBox="0 0 40 40" class="h-10 w-10 fill-current transition-all duration-100 rounded-full outline outline-0 outline-white hover:outline-1">
-                                <!-- <use xlink:href="/src/sprite/fab.svg#instagram" width="26" x="7" /> -->
+                                <use href="/src/assets/sprite/fab.svg#instagram" width="26" x="7" />
                             </svg>
                         </a>
 
@@ -86,26 +81,6 @@ export default {
                 animation-timeline:  --footer-scroll;
                 animation-duration: 1ms;
                 animation-range: cover 0% contain 0%;
-            }
-        }
-    }
-
-    .link {
-        position: relative;
-        width: fit-content;
-        &::after {
-            content: "";
-            width: 0%;
-            height: 2px;
-            background: white;
-            bottom: 0px;
-            left: 0;
-            position: absolute;
-            transition: 0.3s;
-        }
-        &:hover {
-            &::after {
-                width: 100%;
             }
         }
     }
