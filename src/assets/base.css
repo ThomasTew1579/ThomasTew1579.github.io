@@ -86,32 +86,6 @@ body {
         animation-fill-mode: both;
         animation-duration: 1ms;
     }
-    .btn-primary {
-        color: white;
-        background:var(--primary-900) ;
-
-        .icon {
-            background:var(--primary-200) ;
-            & svg {
-                color:var(--primary-900) ;
-            }
-        }
-        &[data-is-active="true"],
-        &:hover {
-            color: var(--primary-900);
-            background:white ;
-
-            .icon {
-                background:var(--primary-900) ;
-                & svg {
-                    color:var(--primary-200) ;
-                }
-            }
-        }
-        &[data-is-active="true"] {
-            outline: inset 1px var(--primary-900);
-        }
-    }
     .btn-secondary {
         color: white ;
         background: rgba(255, 255, 255, 0.15);
