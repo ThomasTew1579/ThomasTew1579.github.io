@@ -91,39 +91,37 @@ body {
         animation-fill-mode: both;
         animation-duration: 1ms;
     }
-    .btn-secondary {
-        color: white ;
-        background: rgba(255, 255, 255, 0.15);
+}
 
-        .icon {
-            background:var(--primary-900) ;
-            & svg {
-                color:var(--primary-200) ;
-            }
+@supports (animation-timeline: view(block)) {
+    @media (min-width:768px) {
+        .image-scroll {
+            scale: 1.2;
+            animation-name: image-scroll-anim;
+            animation-timing-function: linear;
+            animation-fill-mode: both;
+            animation-timeline: view(block);
+            animation-duration: 1ms;
+            animation-range: cover 0% cover 100%;
         }
-        &:hover {
-            color: var(--primary-900);
-            background:white ;
-
-        .icon {
-            background:var(--primary-200) ;
-            & svg {
-                color:var(--primary-900) ;
-            }
-        }
+        .fade-in {
+            animation-name: section-fade-in;
+            animation-timing-function: linear;
+            animation-fill-mode: both;
+            animation-timeline: view(block);
+            animation-duration: 1ms;
+            animation-range: entry-crossing 0% cover 30%;
         }
     }
-    @supports (animation-timeline: view(block)) {
-        @media (min-width:1024px) {
-            .image-scroll {
-                scale: 1.2;
-                animation-name: image-scroll-anim;
-                animation-timing-function: linear;
-                animation-fill-mode: both;
-                animation-timeline: view(block);
-                animation-duration: 1ms;
-                animation-range: cover 0% cover 100%;
-            }
-        }
+}
+
+@keyframes section-fade-in {
+    from {
+        transform: translateY(20%);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
     }
 }
