@@ -1,10 +1,12 @@
 <script>
 import Damier from '../components/Damier.vue';
+import HeroScrollWave from '../components/HeroScrollWave.vue';
 
 export default {
     name : "HomeView",
     components:{
       Damier,
+      HeroScrollWave,
     },
     data() {
       return {
@@ -23,6 +25,7 @@ export default {
 
 <template>
   <main>
+    <HeroScrollWave />
     <Damier title="Titre" text="texte nul" :btn="btnXp" />
   </main>
 </template>
