@@ -11,7 +11,7 @@ export default {
 
 
 <template>
-    <foooter class="footer">
+    <foooter class="footer overflow-hidden relative w-full">
         <div class="container">
             <div class="content grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 p-10 bg-primary-900 text-white rounded-t-2xl md:pb-20">
                 <div class="col-1">
