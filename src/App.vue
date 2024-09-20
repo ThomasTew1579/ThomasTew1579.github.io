@@ -1,7 +1,6 @@
 <script setup>
 import { RouterLink, RouterView } from 'vue-router'
 import Menu from './components/Menu.vue'
-import HelloWorld from './components/HelloWorld.vue'
 </script>
 
 <template>
@@ -20,7 +19,7 @@ import HelloWorld from './components/HelloWorld.vue'
     </div> -->
   </header>
 
-  <!-- <RouterView /> -->
+  <RouterView />
 </template>
 
 <style scoped>
