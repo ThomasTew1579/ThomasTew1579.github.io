@@ -18,16 +18,20 @@ export default {
 </script>
 
 <template>
-    <RouterLink :to="link" class="btn-primary relative group py-3 pr-5 pl-10 hover:pr-10 hover:pl-5 after:content-[''] after:absolute after:bg-white after:left-4 after:w-2 after:h-2 after:aspcet-square after:rounded-full hover:after:scale-[50] after:duration-700 font-semibold text-base rounded-tl-md rounded-br-md overflow-hidden select-none touch-manipulation transition-all duration-300 inline-flex items-center gap-2.5">
-        <span class="content z-10">
+    <RouterLink :to="link" class="btn-secondary group text-white bg-primary-900 group w-fit py-[10px] px-[19px] font-semibold text-base rounded-full relative overflow-hidden select-none touch-manipulation transition-all duration-300 inline-flex items-center gap-2.5 outline outline-primary-900 outline-0 hover:outline-1 hover:text-primary-900 hover:bg-white ">
+        <span class="content">
             {{ title }}
         </span>
-        <svg viewBox="0 0 16 16" class="h-4 w-4 z-10 fill-primary-900 absolute right-4 transition-all duration-500 translate-x-[200%] group-hover:translate-x-0">
-            <use :href="'/src/assets/sprite/far.svg#' + icon" width="16" />
-        </svg>
+        <span class="icon group-hover:bg-primary-900 group-hover:text-primary-200 bg-primary-200 text-primary-900 size-[30px] p-[7px] overflow-hidden rounded-full duration-300">
+            <svg viewBox="0 0 40 16" class="h-4 w-10 fill-current transition-all duration-200 translate-x-[-1.5rem] group-hover:translate-x-0">
+                <use :href="'/src/assets/sprite/far.svg#' + icon" width="16" />
+                <use :href="'/src/assets/sprite/far.svg#' + icon" width="16" x="24" />
+            </svg>
+        </span>
     </RouterLink>
 </template>
 
 
 <style>
+
 </style>

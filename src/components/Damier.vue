@@ -1,5 +1,5 @@
 <script>
-import ButtonPrimary from './button/ButtonPrimary.vue';
+import ButtonSecondary from './button/ButtonSecondary.vue';
 export default {
     name : "Damier",
     props : {
@@ -16,7 +16,7 @@ export default {
         },
     },
     components: {
-        ButtonPrimary,
+        ButtonSecondary,
     }
  }
 
@@ -32,7 +32,7 @@ export default {
             <div class="text flex flex-col gap-4">
                 <h2 class="title-5 fade-in">{{ title }}</h2>
                 <p class="fade-in">{{text}}</p>
-                <ButtonPrimary v-if="hasBtn" :title="btn.title" icon="arrow-right" :link="btn.link" />  
+                <ButtonSecondary v-if="hasBtn" :title="btn.title" icon="arrow-right" :link="btn.link" />  
             </div>
             <div v-if="order" class="image hidden md:flex overflow-clip rounded-2xl relative h-[300px] lg:h-[500px] fade-in">
                 <img class="image-scroll absolute object-cover inset-0 w-full h-full" :src="image" alt="">
