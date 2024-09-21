@@ -1,12 +1,14 @@
 <script>
 import Damier from '../components/Damier.vue';
 import HeroScrollWave from '../components/HeroScrollWave.vue';
+import SliderCardScroll from '../components/SliderCardScroll.vue';
 
 export default {
     name : "HomeView",
     components:{
       Damier,
       HeroScrollWave,
+      SliderCardScroll,
     },
     data() {
       return {
@@ -17,7 +19,14 @@ export default {
         btnFrom : {
           url: "/",
           title: "btn moche",
-        }
+        },
+        slidesRealisations :  [
+          "/src/assets/image/vignette-realisations/cabinet-eysette.webp",
+          "/src/assets/image/vignette-realisations/ltnd.webp",
+          "/src/assets/image/vignette-realisations/dott.webp",
+          "/src/assets/image/vignette-realisations/pilot-in.jpg",
+          "/src/assets/image/vignette-realisations/thermiconseil.jpg",
+        ],
       }
     }
 }
@@ -41,7 +50,11 @@ export default {
       :btn="btnXp" 
       :bg = "true"
     />
-    <Damier 
+    <SliderCardScroll
+      title="Mes réalisations"
+      :slides= "slidesRealisations"
+    />
+      <Damier 
       title="Mes formations" 
       text="Mon parcours de formation est marqué par une évolution constante vers le développement web. Après un BTS en électrotechnique et une formation en régie technique de l’événementiel, j’ai suivi des cours en ligne spécialisés en HTML, CSS et JavaScript sur Udemy et Elephorme. Ces formations m'ont permis d'acquérir les bases solides et d'approfondir mes compétences dans les technologies web, essentielles à mon activité de développeur." 
       image="/src/assets/image/illustrations/illu-form.webp" 

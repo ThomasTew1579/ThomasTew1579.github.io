@@ -1,4 +1,5 @@
 import './assets/main.css'
+import '@splidejs/vue-splide/css';
 
 import { createApp } from 'vue'
 import App from './App.vue'
