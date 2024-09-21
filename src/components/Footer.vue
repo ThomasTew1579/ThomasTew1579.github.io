@@ -11,7 +11,7 @@ export default {
 </script>
 
 <template>
-    <foooter class="footer overflow-hidden relative block w-full">
+    <footer class="footer overflow-hidden relative block w-full">
         <div class="container">
             <div class="content grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 p-10 bg-primary-900 text-white rounded-t-2xl md:pb-20">
                 <div class="col-1">
@@ -33,8 +33,16 @@ export default {
                     <strong class="text-xl mb-2">
                         Contact
                     </strong>
-                    <FooterItem title="pasquet.thomas69@gmail.com" link="mailto:pasquet.thomas69@gmail.com" /> 
-                    <FooterItem title="07 81 59 82 00" link="tel:+33781598200" /> 
+                    <a href="mailto:pasquet.thomas69@gmail.com" class="footer-item w-fit first:lg:ml-auto after:content-[''] after:w-[0%] after:h-0.5 after:bg-white after:bottom-[-5px] after:left-0 after:absolute after:duration-300 hover:after:w-full font-semibold text-white relative duration-200 ">
+                        <span class="content">
+                            pasquet.thomas69@gmail.com
+                        </span>
+                    </a>
+                    <a href="tel:+33781598200" class="footer-item w-fit first:lg:ml-auto after:content-[''] after:w-[0%] after:h-0.5 after:bg-white after:bottom-[-5px] after:left-0 after:absolute after:duration-300 hover:after:w-full font-semibold text-white relative duration-200 ">
+                        <span class="content">
+                            07 81 59 82 00
+                        </span>
+                    </a>
                     <div class="reseaux flex flex-row gap-2">
                         <a href="" class="github">
                             <svg viewBox="0 0 40 40" class="h-10 w-10 fill-current transition-all duration-100 rounded-full outline outline-0 outline-white hover:outline-1">
@@ -58,7 +66,7 @@ export default {
             </div>
 
         </div>
-    </foooter>
+    </footer>
 </template>
 
 <style>
