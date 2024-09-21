@@ -7,8 +7,7 @@ export default {
 
 
 <template>
-
-<section class="hero font-primary flex relative flex-col items-center">
+    <section class="hero font-primary flex relative flex-col items-center">
             <div class="surtitle">
                 <div class="title-1">
                     <span class="z-[1]">
@@ -34,6 +33,10 @@ export default {
 
 <style>
     .hero {
+        --hero-height:150vh;
+        @media (max-width:1024px) {
+            --hero-height:130vh;
+        }
         @apply h-[50dvh] flex justify-center flex-col items-center;
  
         .background-wave {
@@ -43,16 +46,13 @@ export default {
             @apply hidden;
         }
         .surtitle {
+            @apply w-full relative;
             mask: url(/src/assets/image/wave-2-mask.svg)  ;
             -webkit-mask: url(/src/assets/image/wave-2-mask.svg)  ;
-            width: 100%;
-            position: relative;
             .title-1 {
+                @apply block w-full text-center;
                 background: linear-gradient(240deg, rgba(84,58,183,1) 0%, rgba(0,172,193,1) 100%);
                 background-clip: text;
-                display: block;
-                width: 100%;
-                text-align: center;
                 color: transparent;
 
             }
@@ -67,39 +67,27 @@ export default {
                 --hero-height:130vh;
             }
             height: var(--hero-height);   
-            
             .surtitle {
                 @apply z-[1] w-full relative;
                 mask: url(/src/assets/image/wave-2-mask.svg)  ;
                 -webkit-mask: url(/src/assets/image/wave-2-mask.svg)  ;
                 .title-1 {
+                    @apply sticky block w-full text-center top-[50dvh] -translate-y-1/2;
                     background: linear-gradient(240deg, rgba(84,58,183,1) 0%, rgba(0,172,193,1) 100%);
                     background-clip: text;
-                    position: sticky;
-                    display: block;
-                    width: 100%;
-                    text-align: center;
-                    top: 50vh;
-                    transform: translateY(-50%);
                     color: transparent;
-
                 }
             }
-        
             .title {
-                display: block; 
+                @apply block w-full absolute top-0 text-white;
                 mask: url(/src/assets/image/wave-2-mask-reverse.svg)  ;
                 -webkit-mask: url(/src/assets/image/wave-2-mask-reverse.svg)  ;
+                background: linear-gradient(240deg, rgba(84,58,183,1) 0%, rgba(0,172,193,1) 100%);
                 mask-position: top center;
-                background: var(--primary-gradient);
                 background-repeat: no-repeat;
                 background-size: auto 100vh;
                 backdrop-filter: blur(3px);
                 -webkit-backdrop-filter: blur(3px);
-                width: 100%;
-                position: absolute;
-                top: 0;
-                color: white;
                 .title-1 {
                     @apply -translate-y-full translate-x-[-1.2vh] z-[1] sticky block w-full text-center top-[50dvh];
                     transform: translateY(-100%) translateX(-1.2vh);
@@ -108,7 +96,6 @@ export default {
             .background-wave {
                 @apply block;
             }
-        
             .surtitle,
             .title {
                 height: var(--hero-height);
