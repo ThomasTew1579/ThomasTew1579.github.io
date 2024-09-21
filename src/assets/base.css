@@ -8,19 +8,7 @@
 }
 
 body {
-    --primary-200:#81b6f2 ;
-    --primary-600:#233A5F ;
-    --primary-900:#252773 ;
-    --primary-gradient: linear-gradient(60deg, rgba(84,58,183,1) 0%, rgba(0,172,193,1) 100%);
-    --primary-gradient-40: linear-gradient(60deg, rgba(84,58,183,0.1) 0%, rgba(0,172,193,0.1) 100%);
-    scroll-behavior: smooth;
-    color: var(--primary-900) ;
-    position: relative;
-    --hero-height:150vh;
-
-    @media (max-width:1024px) {
-        --hero-height:130vh;
-    }
+    @apply text-primary-900 relative scroll-smooth;
 
     .title-1 {
         @apply font-primary text-[8vw] mx-0 leading-none;
@@ -41,7 +29,7 @@ body {
         @apply text-[20px] md:text-[40px] mx-0 leading-none;
     }
     .container {
-        margin-inline: auto;
+        @apply mx-auto;
     }
     .scroll-driven {
         animation-timing-function: linear;
