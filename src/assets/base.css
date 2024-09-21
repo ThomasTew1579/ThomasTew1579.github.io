@@ -59,7 +59,14 @@ body {
         }
     }
 }
-
+@keyframes image-scroll-anim {
+    from {
+        transform: translateY(-10%);
+    }
+    to {
+        transform: translateY(10%);
+    }
+}
 @keyframes section-fade-in {
     from {
         transform: translateY(20%);
