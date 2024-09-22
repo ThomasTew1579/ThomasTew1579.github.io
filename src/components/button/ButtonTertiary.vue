@@ -12,7 +12,7 @@ export default {
 </script>
 
 <template>
-    <a :href="link" :class="class" class="btn-tertiary group text-white bg-black/15 hover:bg-white hover:text-primary-900 group w-fit py-[10px] px-[19px] font-semibold text-base rounded-full relative overflow-hidden select-none touch-manipulation transition-all duration-300 inline-flex items-center gap-2.5">
+    <a :href="link" :class="class" class="btn-tertiary cursor-pointer group text-white bg-black/15 hover:bg-white hover:text-primary-900 group w-fit py-[10px] px-[19px] font-semibold text-base rounded-full relative overflow-hidden select-none touch-manipulation transition-all duration-300 inline-flex items-center gap-2.5">
         <span class="content">
             {{ title }}
         </span>

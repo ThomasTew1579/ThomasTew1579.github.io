@@ -18,7 +18,7 @@ export default {
 </script>
 
 <template>
-    <RouterLink :to="link" class="btn-secondary group text-white bg-primary-900 group w-fit py-[10px] px-[19px] font-semibold text-base rounded-full relative overflow-hidden select-none touch-manipulation transition-all duration-300 inline-flex items-center gap-2.5 outline outline-primary-900 outline-0 hover:outline-1 hover:text-primary-900 hover:bg-white ">
+    <RouterLink :to="link" class="btn-secondary group cursor-pointer text-white bg-primary-900 group w-fit py-[10px] px-[19px] font-semibold text-base rounded-full relative overflow-hidden select-none touch-manipulation transition-all duration-300 inline-flex items-center gap-2.5 outline outline-primary-900 outline-0 hover:outline-1 hover:text-primary-900 hover:bg-white ">
         <span class="content">
             {{ title }}
         </span>
