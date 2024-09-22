@@ -4,7 +4,6 @@ export default {
     name : "Damier",
     props : {
         title : String,
-        text : String,
         image : String,
         hideMobileImage : Boolean,
         order : Boolean,
@@ -35,7 +34,9 @@ export default {
             </div>
             <div class="text flex flex-col gap-4">
                 <h2 class="title-5 fade-in">{{ title }}</h2>
-                <p class="fade-in">{{text}}</p>
+                <p class="fade-in">
+                    <slot></slot>
+                </p>
                 <ButtonSecondary v-if="hasBtn && btn" :title="btn.title" icon="arrow-right" :link="btn.url" />  
             </div>
             <div v-if="order" :class="{'hidden md:flex ': hideMobileImage}" class="image overflow-clip rounded-2xl relative h-[300px] lg:h-[500px] fade-in">
