@@ -33,11 +33,7 @@ export default {
 
 <style>
     .hero {
-        --hero-height:150vh;
-        @media (max-width:1024px) {
-            --hero-height:130vh;
-        }
-        @apply h-[50dvh] flex justify-center flex-col items-center;
+        @apply h-[90dvh] md:h-[100dvh] flex justify-center flex-col items-center;
  
         .background-wave {
             @apply hidden;
@@ -66,11 +62,22 @@ export default {
             @media (max-width:1024px) {
                 --hero-height:130vh;
             }
-            height: var(--hero-height);   
+            height: var(--hero-height);  
+            view-timeline: --hero-scroll-wave; 
             .surtitle {
                 @apply z-[1] w-full relative;
                 mask: url(/src/assets/image/wave-2-mask.svg)  ;
                 -webkit-mask: url(/src/assets/image/wave-2-mask.svg)  ;
+                @supports (animation-timeline: view(block))  {
+                    @media (min-width:768px) {
+                        animation-name: hero-scroll-wave;
+                        animation-timing-function: linear;
+                        animation-fill-mode: both;
+                        animation-timeline:  --hero-scroll-wave;
+                        animation-duration: 1ms;
+                        animation-range: contain 0% cover 100%;
+                    }
+                }
                 .title-1 {
                     @apply sticky block w-full text-center top-[50dvh] -translate-y-1/2;
                     background: linear-gradient(240deg, rgba(84,58,183,1) 0%, rgba(0,172,193,1) 100%);
@@ -108,4 +115,16 @@ export default {
             }
         }
     }
+
+    @keyframes hero-scroll-wave {
+    from {
+        transform: translateY(0%);
+    }
+    60% {
+        transform: translateY(0%);
+    }
+    to {
+        transform: translateY(-10%);
+    }
+}
 </style>
