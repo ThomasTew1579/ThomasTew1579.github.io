@@ -3,7 +3,7 @@ import HeroImage from '../components/HeroImage.vue';
 import Damier from '../components/Damier.vue';
 
 export default {
-    name : "HomeView",
+    name : "RealisationsView",
     components:{
       HeroImage,
       Damier,
@@ -12,6 +12,6 @@ export default {
 </script>
 
 <template>
-  <HeroImage title="Qui suis-je ?" image="/src/assets/image/blue.jpg" />
+  <HeroImage title="Réalisations" image="/src/assets/image/illustrations/illu-real.webp" />
 </template>
 
