@@ -71,7 +71,7 @@ export default {
                     animation-fill-mode: both;
                     animation-timeline: --damier;
                     animation-duration: 1ms;
-                    animation-range: contain 50% cover 110%;
+                    animation-range: contain 0% cover 80%;
                 }
             }
         }
