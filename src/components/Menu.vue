@@ -94,11 +94,11 @@ document.addEventListener("DOMContentLoaded", function () {
                     <RouterLink to="/" class="text-[25px] md:text-[33px] font-bold cursor-pointer duration-300 !leading-[160%] hover:pl-8 pl-4 text-white">Thomas</RouterLink>
                    
                     <div class="nav duration-500 fixed top-[85px] right-0 flex flex-col w-full max-h-[90vh] gap-6 items-center max-lg:bg-black/70 ease-[cubic-bezier(0.53, -0.23, 0.5, 1.16)] max-md:max-w-[95vw] py-12 rounded-md lg:contents max-lg:backdrop-blur-md max-lg:translate-x-[110%]">
-                            <!-- <MenuItem title="Qui suis-je ?" link="/#cta-contact" />                        
-                            <MenuItem title="Réalisations" link="/#cta-contact" />                        
-                            <MenuItem title="Experiences" link="/#cta-contact" />                        
-                            <MenuItem title="Formation" link="/#cta-contact" />                        
-                            <ButtonPrimary title="Contactez moi" icon="arrow-right" link="/#cta-contact" />                         -->
+                            <MenuItem title="Qui suis-je ?" link="/about" />                        
+                            <MenuItem title="Réalisations" link="/realisations" />                        
+                            <!-- <MenuItem title="Experiences" link="/#cta-contact" />                         -->
+                            <!-- <MenuItem title="Formation" link="/#cta-contact" />                         -->
+                            <!-- <ButtonPrimary title="Contactez moi" icon="arrow-right" link="/#cta-contact" />                         -->
                     </div>
                     <button class="burger padding-0 relative ml-auto flex cursor-pointer items-center border-none bg-transparent outline-none lg:hidden" aria-label="Main Menu">
                         <svg width="40" height="40" viewBox="0 0 100 100">
