@@ -98,7 +98,7 @@ document.addEventListener("DOMContentLoaded", function () {
                             <MenuItem title="Réalisations" link="/realisations" />                        
                             <MenuItem title="Experiences" link="/experiences" />                        
                             <MenuItem title="Formation" link="/formations" />                        
-                            <!-- <ButtonPrimary title="Contactez moi" icon="arrow-right" link="/#cta-contact" />                         -->
+                            <ButtonPrimary title="Contactez moi" icon="arrow-right" link="#cta-contact" />                        
                     </div>
                     <button class="burger padding-0 relative ml-auto flex cursor-pointer items-center border-none bg-transparent outline-none lg:hidden" aria-label="Main Menu">
                         <svg width="40" height="40" viewBox="0 0 100 100">

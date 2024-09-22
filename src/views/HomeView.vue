@@ -19,7 +19,7 @@ export default {
           title: "btn moche",
         },
         btnFrom : {
-          url: "/",
+          url: "/formations",
           title: "btn moche",
         },
         btnContactTel : {
@@ -45,7 +45,6 @@ export default {
 </script>
 
 <template>
-  <main>
     <HeroScrollWave />
     <Damier 
       title="Thomas Pasquet" 
@@ -72,11 +71,4 @@ export default {
       :hideMobileImage ="true"
     >
       Mon parcours de formation est marqué par une évolution constante vers le développement web. Après un BTS en électrotechnique et une formation en régie technique de l’événementiel, j’ai suivi des cours en ligne spécialisés en HTML, CSS et JavaScript sur Udemy et Elephorme. Ces formations m'ont permis d'acquérir les bases solides et d'approfondir mes compétences dans les technologies web, essentielles à mon activité de développeur.</Damier>
-      <CtaContact 
-      title="Contactez Moi !" 
-      image="/src/assets/image/blue.jpg" 
-      :btn1="btnContactTel" 
-      :btn2="btnContactMail" 
-    />
-  </main>
 </template>
