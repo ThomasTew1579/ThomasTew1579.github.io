@@ -14,7 +14,7 @@ export default {
       <section class="hero-image h-screen pb-8 md:pb-20 overflow-clip relative">
         <img class="image-scroll opacity-70 absolute object-cover aspcet-square max-md:h-full inset-0 z-0 w-full" :src="image" alt="">
         <div class="content h-full flex flex-col justify-center items-center z-[1] relative ">
-            <div class="text w-full pt-1 pb-2 text-center backdrop-blur-[20px]">
+            <div class="text text-white w-full pt-1 pb-2 text-center backdrop-blur-[20px] backdrop-brightness-75 shadow-lg">
                 <div class="container mx-auto">
                     <h1 class="title-1 !leading-normal">
                         {{title}}
