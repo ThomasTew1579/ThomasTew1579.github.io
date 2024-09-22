@@ -56,13 +56,13 @@ export default {
             <SplideSlide 
                 v-for="(slide, index) in slides" 
                 :key="index" 
-                class="splide__slide card lg:shadow-2xl group p-6 rounded-2xl h-[400px] lg:h-[20vw] overflow-clip flex flex-col justify-end"
+                class="splide__slide card lg:shadow-2xl group p-6 rounded-2xl h-[250px] lg:h-[20vw] overflow-clip flex flex-col justify-end"
             >
                 <img class="image-scroll absolute object-cover inset-0 w-full h-full z-0" :src="slide" alt="">
             </SplideSlide>
         </Splide>
         <div class="container">
-            <div class="outro hidden flex justify-center">
+            <div class="outro flex justify-center">
                 <ButtonSecondary link="/" title="Voir tout" />
             </div>
         </div>
