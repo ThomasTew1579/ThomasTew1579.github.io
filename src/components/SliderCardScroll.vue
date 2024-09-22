@@ -62,7 +62,7 @@ export default {
             </SplideSlide>
         </Splide>
         <div class="container">
-            <div class="outro flex justify-center">
+            <div class="outro hidden flex justify-center">
                 <ButtonSecondary link="/" title="Voir tout" />
             </div>
         </div>

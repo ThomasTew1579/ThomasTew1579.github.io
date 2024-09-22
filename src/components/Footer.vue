@@ -20,7 +20,7 @@ export default {
                     </strong>
                     <p class="mt-4">Developeur Front-end</p>
                 </div>
-                <div class="col-3 ml-auto flex flex-col gap-2">
+                <div class="col-3 !opacity-0 pointer-events-none ml-auto flex flex-col gap-2">
                     <strong class="text-xl mb-2">
                         Liens
                     </strong>
