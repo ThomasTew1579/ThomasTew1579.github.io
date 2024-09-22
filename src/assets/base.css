@@ -6,6 +6,9 @@
     font-family: 'Mustica Pro' ;
     src: url(/src/assets/font/MusticaPro-SemiBold.woff2);
 }
+html {
+    scroll-behavior: smooth;
+}
 
 body {
     @apply text-primary-900 relative scroll-smooth;
