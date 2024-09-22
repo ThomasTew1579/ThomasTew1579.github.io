@@ -6,7 +6,7 @@ export default {
     name : "HomeView",
     components:{
       HeroImage,
-      Damier,
+      Damier
     },
 }
 </script>
