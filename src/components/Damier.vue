@@ -29,7 +29,7 @@ export default {
             <path d="M 0 0 C 1000 -1 2000 0 3000 0 L 3000 2 L 0 2 Z"/>
         </svg>
         <div class="container md:px-12 xl:max-w-[1280px] grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-            <div v-if="!order" :class="{'hidden md:flex ': hideMobileImage}" class="image fade-in overflow-clip rounded-2xl relative h-[300px] lg:h-[500px] fade-in">
+            <div v-if="!order" :class="{'hidden md:flex ': hideMobileImage}" class="image fade-in overflow-clip rounded-2xl relative h-[300px] lg:h-[400px] fade-in">
                 <img class="image-scroll absolute object-cover inset-0 w-full h-full" :src="image" alt="">
             </div>
             <div class="text flex flex-col gap-4">
@@ -39,7 +39,7 @@ export default {
                 </p>
                 <ButtonSecondary v-if="hasBtn && btn" :title="btn.title" icon="arrow-right" :link="btn.url" />  
             </div>
-            <div v-if="order" :class="{'hidden md:flex ': hideMobileImage}" class="image overflow-clip rounded-2xl relative h-[300px] lg:h-[500px] fade-in">
+            <div v-if="order" :class="{'hidden md:flex ': hideMobileImage}" class="image overflow-clip rounded-2xl relative h-[300px] lg:h-[400px] fade-in">
                 <img class="image-scroll absolute object-cover inset-0 w-full h-full" :src="image" alt="">
             </div>
         </div>
@@ -54,24 +54,32 @@ export default {
     .damier {
         view-timeline: --damier;
         .bubble {
-            &.top {
-                & path {
-                    animation-name: bubble-scroll-top;
-                    animation-timing-function: linear;
-                    animation-fill-mode: both;
-                    animation-timeline: --damier;
-                    animation-duration: 1ms;
-                    animation-range: cover 10% cover 100%;
-                }
-            }
-            &.bottom {
-                & path {
-                    animation-name: bubble-scroll-bottom;
-                    animation-timing-function: linear;
-                    animation-fill-mode: both;
-                    animation-timeline: --damier;
-                    animation-duration: 1ms;
-                    animation-range: contain 0% cover 80%;
+            @apply hidden;
+        }
+        @supports (animation-timeline: view(block))  {
+            @media (min-width:768px) {
+                .bubble {
+                    @apply block;
+                    &.top {
+                        & path {
+                            animation-name: bubble-scroll-top;
+                            animation-timing-function: linear;
+                            animation-fill-mode: both;
+                            animation-timeline: --damier;
+                            animation-duration: 1ms;
+                            animation-range: cover 10% cover 100%;
+                        }
+                    }
+                    &.bottom {
+                        & path {
+                            animation-name: bubble-scroll-bottom;
+                            animation-timing-function: linear;
+                            animation-fill-mode: both;
+                            animation-timeline: --damier;
+                            animation-duration: 1ms;
+                            animation-range: contain 0% cover 80%;
+                        }
+                    }
                 }
             }
         }
