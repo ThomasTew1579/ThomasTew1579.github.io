@@ -24,7 +24,7 @@ export default {
                 </h1>
                 
                 <div class="background-wave z-0 absolute inset-0 overflow-hidden">
-                    <img class="img-wave absolute top-0 left-0 w-full h-full" src="/src/assets/image/wave-2.svg" alt="">
+                    <img class="img-wave absolute top-0 left-0 w-full h-full" src="/public/image/wave-2.svg" alt="">
                 </div>
 
             </div>
@@ -43,8 +43,8 @@ export default {
         }
         .surtitle {
             @apply w-full relative;
-            mask: url(/src/assets/image/wave-2-mask.svg)  ;
-            -webkit-mask: url(/src/assets/image/wave-2-mask.svg)  ;
+            mask: url(/public/image/wave-2-mask.svg)  ;
+            -webkit-mask: url(/public/image/wave-2-mask.svg)  ;
             .title-1 {
                 @apply block w-full text-center;
                 background: linear-gradient(240deg, rgba(84,58,183,1) 0%, rgba(0,172,193,1) 100%);
@@ -66,8 +66,8 @@ export default {
             view-timeline: --hero-scroll-wave; 
             .surtitle {
                 @apply z-[1] w-full relative;
-                mask: url(/src/assets/image/wave-2-mask.svg)  ;
-                -webkit-mask: url(/src/assets/image/wave-2-mask.svg)  ;
+                mask: url(/public/image/wave-2-mask.svg)  ;
+                -webkit-mask: url(/public/image/wave-2-mask.svg)  ;
                 @supports (animation-timeline: view(block))  {
                     @media (min-width:768px) {
                         animation-name: hero-scroll-wave;
@@ -87,8 +87,8 @@ export default {
             }
             .title {
                 @apply block w-full absolute top-0 text-white;
-                mask: url(/src/assets/image/wave-2-mask-reverse.svg)  ;
-                -webkit-mask: url(/src/assets/image/wave-2-mask-reverse.svg)  ;
+                mask: url(/public/image/wave-2-mask-reverse.svg)  ;
+                -webkit-mask: url(/public/image/wave-2-mask-reverse.svg)  ;
                 background: linear-gradient(240deg, rgba(84,58,183,1) 0%, rgba(0,172,193,1) 100%);
                 mask-position: top center;
                 background-repeat: no-repeat;

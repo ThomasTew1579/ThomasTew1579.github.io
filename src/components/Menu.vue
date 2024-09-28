@@ -119,7 +119,7 @@ document.addEventListener("DOMContentLoaded", function () {
     .home-logo {
         &:before {
             @apply absolute left-0 top-1 opacity-0 w-10 h-10 rotate-45 scale-0 duration-300;
-            content: url(/src/assets/logo.svg);
+            content: url(/public/image/logo.svg);
         }
         &:hover {
             &:before {

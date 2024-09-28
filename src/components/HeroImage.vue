@@ -23,7 +23,7 @@ export default {
             </div>
         </div>
         <div class="background-wave-boate z-[2] absolute inset-0 overflow-clip">
-            <img class="img-wave absolute top-0 left-0 w-full h-full" src="/src/assets/image/wave-3.svg" alt="">
+            <img class="img-wave absolute top-0 left-0 w-full h-full" src="/public/image/wave-3.svg" alt="">
         </div>
     </section>
 </template>
