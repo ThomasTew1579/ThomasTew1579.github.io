@@ -12,9 +12,9 @@ export default {
 </script>
 
 <template>
-  <HeroImage title="Réalisations" image="/public/image/illustrations/illu-real.webp" />
+  <HeroImage title="Réalisations" image="/image/illustrations/illu-real.webp" />
 
-  <Damier title="Modélisation 3D" :order = "true" image="/public/image/photo-perso.jpg" >
+  <Damier title="Modélisation 3D" :order = "true" image="/image/photo-perso.jpg" >
     https://www.biens-surs.fr/
 
   </Damier>

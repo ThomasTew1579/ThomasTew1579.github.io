@@ -43,25 +43,25 @@ document.addEventListener("DOMContentLoaded", function () {
 
         if (st > lastScrollTop && st > menu.getBoundingClientRect().height) {
             // Scroll Down
-            menu.classList.remove("scroll-default", "scroll-up");
-            menu.classList.add("scroll-down");
+            document.body.classList.remove("scroll-default", "scroll-up");
+            document.body.classList.add("scroll-down");
         } else {
             // Scroll Up
 
             if (st < menu.getBoundingClientRect().height) {
-                menu.style.setProperty("transition", "0s")
-                menu.classList.remove("scroll-down", "scroll-up");
-                menu.classList.add("scroll-default");
+                document.body.style.setProperty("transition", "0s")
+                document.body.classList.remove("scroll-down", "scroll-up");
+                document.body.classList.add("scroll-default");
             } else {
-                menu.style.setProperty("transition", "0.3s ease")
-                menu.classList.remove("scroll-default", "scroll-down");
-                menu.classList.add("scroll-up");
+                document.body.style.setProperty("transition", "0.3s ease")
+                document.body.classList.remove("scroll-default", "scroll-down");
+                document.body.classList.add("scroll-up");
             }
         }
         lastScrollTop = st;
     }
 
-    menu.classList.add("scroll-default");
+    document.body.classList.add("scroll-default");
     
     function handlePageScroll() {
         if (window.scrollY >= document.innerHeight * 0.6) {
@@ -115,6 +115,50 @@ document.addEventListener("DOMContentLoaded", function () {
 
 <style scoped>
 
+body {
+    &.scroll-default {
+        .menu {
+            @apply lg:absolute opacity-100;
+            .wrapper {
+                @apply container mx-auto px-2;
+                .links {
+                    @apply rounded-b-md backdrop-blur-sm bg-black/30 hover:backdrop-blur-md;
+                }
+            }
+        }
+    }
+    &.scroll-up {
+        .menu {
+            @apply translate-y-0;
+        }
+    }
+    &.scroll-down {
+        .menu {
+            @apply -translate-y-full;
+        }
+    }
+
+    &.scroll-down,
+    &.scroll-up {
+        .menu {
+            @apply fixed opacity-100;
+            .wrapper {
+                @apply backdrop-blur-sm bg-black/30 hover:backdrop-blur-md duration-200;
+                .links {
+                    @apply container mx-auto px-2 ;
+                }
+            }
+        }
+    }
+    &.scroll {
+        .menu {
+            .links {
+                @apply bg-black/45;
+            }
+        }
+    }
+}
+
 .menu {
     .home-logo {
         &:before {
@@ -128,37 +172,7 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     }
     @apply opacity-0 duration-150;
-    &.scroll-default {
-        @apply lg:absolute opacity-100;
-        .wrapper {
-            @apply container mx-auto px-2;
-            .links {
-                @apply rounded-b-md backdrop-blur-sm bg-black/30 hover:backdrop-blur-md;
-            }
-        }
-    }
-    &.scroll-up {
-        @apply translate-y-0;
-    }
-    &.scroll-down {
-        @apply -translate-y-full;
-    }
 
-    &.scroll-down,
-    &.scroll-up {
-        @apply fixed opacity-100;
-        .wrapper {
-            @apply backdrop-blur-sm bg-black/30 hover:backdrop-blur-md duration-200;
-            .links {
-                @apply container mx-auto px-2 ;
-            }
-        }
-    }
-    &.scroll {
-        .links {
-            @apply bg-black/45;
-        }
-    }
 
     .burger {
         .line {

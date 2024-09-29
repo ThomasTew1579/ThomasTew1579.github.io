@@ -11,7 +11,7 @@ export default {
 
 
 <template>
-      <section class="hero-image h-screen pb-8 md:pb-20 overflow-clip relative">
+      <section class="hero-image h-screen overflow-clip relative">
         <img class="image-scroll opacity-70 absolute object-cover aspcet-square max-md:h-full inset-0 z-0 w-full" :src="image" alt="">
         <div class="content h-full flex flex-col justify-center items-center z-[1] relative ">
             <div class="text text-white w-full pt-1 pb-2 text-center backdrop-blur-[20px] backdrop-brightness-75 shadow-lg">
@@ -23,7 +23,7 @@ export default {
             </div>
         </div>
         <div class="background-wave-boate z-[2] absolute inset-0 overflow-clip">
-            <img class="img-wave absolute top-0 left-0 w-full h-full" src="/public/image/wave-3.svg" alt="">
+            <img class="img-wave absolute top-0 left-0 w-full h-full" src="/image/wave-3.svg" alt="">
         </div>
     </section>
 </template>

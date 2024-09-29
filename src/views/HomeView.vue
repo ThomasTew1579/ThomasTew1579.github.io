@@ -33,11 +33,11 @@ export default {
           icon: "envelope",
         },
         slidesRealisations :  [
-          "/public/image/vignette-realisations/cabinet-eysette.webp",
-          "/public/image/vignette-realisations/ltnd.webp",
-          "/public/image/vignette-realisations/dott.webp",
-          "/public/image/vignette-realisations/pilot-in.jpg",
-          "/public/image/vignette-realisations/thermiconseil.jpg",
+          "/image/vignette-realisations/cabinet-eysette.webp",
+          "/image/vignette-realisations/ltnd.webp",
+          "/image/vignette-realisations/dott.webp",
+          "/image/vignette-realisations/pilot-in.jpg",
+          "/image/vignette-realisations/thermiconseil.jpg",
         ],
       }
     }
@@ -49,13 +49,13 @@ export default {
     <Damier 
       title="Thomas Pasquet" 
       :order = "true"
-      image="/public/image/photo-perso.jpg" 
+      image="/image/photo-perso.jpg" 
     >
       Né en 1994 et originaire de la Sarthe, je vis maintenant à Lyon depuis 2016. Régisseur lumière dans le spectacle vivant puis reconverti dans le développement web, j’occupe actuellement un poste de développeur full stack au sein d’une agence WordPress lyonnaise. <br>
       Je souhaite désormais mettre aux défis mes compétences de Développeur Front acquises et enrichir mes connaissances dans les frameworks JavaScript.</Damier>
     <Damier 
       title="Mon experiences" 
-      image="/public/image/illustrations/illu-xp.webp" 
+      image="/image/illustrations/illu-xp.webp" 
       :bg = "true"
       :hideMobileImage ="true"
     >
@@ -66,7 +66,7 @@ export default {
     />
       <Damier 
       title="Mes formations" 
-      image="/public/image/illustrations/illu-form.webp" 
+      image="/image/illustrations/illu-form.webp" 
       :order = "true"
       :hideMobileImage ="true"
     >
