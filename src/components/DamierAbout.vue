@@ -54,7 +54,7 @@ export default {
             animation-fill-mode: both;
             animation-timeline: view(block);
             animation-duration: 1ms;
-            animation-range: cover 0% cover 80%;
+            animation-range: cover 0% cover 60%;
         }
     }
 }
