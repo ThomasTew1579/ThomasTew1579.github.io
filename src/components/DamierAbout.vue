@@ -43,7 +43,7 @@ export default {
 </template>
 
 
-<style>
+<style scoped>
 @supports (animation-timeline: view(block))  {
     @media (min-width:768px) {
         .title {
