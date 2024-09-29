@@ -163,7 +163,7 @@ body {
     .home-logo {
         &:before {
             @apply absolute left-0 top-1 opacity-0 w-10 h-10 rotate-45 scale-0 duration-300;
-            content: url(/public/image/logo.svg);
+            content: url(/image/logo.svg);
         }
         &:hover {
             &:before {
