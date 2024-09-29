@@ -11,6 +11,7 @@ html {
 }
 
 body {
+    --menu-height:72px;
     @apply text-primary-900 relative scroll-smooth;
 
     .title-1 {
@@ -74,9 +75,11 @@ body {
     from {
         transform: translateY(20%);
         opacity: 0;
+        filter: blur(4px);
     }
     to {
         transform: translateY(0);
         opacity: 1;
+        filter: blur(0px);
     }
 }
