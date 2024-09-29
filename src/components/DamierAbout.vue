@@ -50,7 +50,7 @@ export default {
             -webkit-text-stroke: 2px white;
             color: transparent;
             animation-name: title-damier;
-            animation-timing-function: linear;
+            animation-timing-function: cubic-bezier(.47,-0.3,.68,1.35);
             animation-fill-mode: both;
             animation-timeline: view(block);
             animation-duration: 1ms;

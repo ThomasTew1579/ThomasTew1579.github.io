@@ -47,7 +47,7 @@ body {
         .image-scroll {
             scale: 1.2;
             animation-name: image-scroll-anim;
-            animation-timing-function: linear;
+            animation-timing-function: cubic-bezier(.52,-0.05,.03,.78);
             animation-fill-mode: both;
             animation-timeline: view(block);
             animation-duration: 1ms;
@@ -55,7 +55,7 @@ body {
         }
         .fade-in {
             animation-name: section-fade-in;
-            animation-timing-function: linear;
+            animation-timing-function: cubic-bezier(.52,-0.05,.03,.78);
             animation-fill-mode: both;
             animation-timeline: view(block);
             animation-duration: 1ms;
