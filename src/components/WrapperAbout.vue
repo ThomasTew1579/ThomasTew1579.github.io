@@ -5,6 +5,7 @@ export default {
 
  document.addEventListener("DOMContentLoaded", function () {
      const wrapperAbout = document.querySelector(".wrapper-about");
+     if(!wrapperAbout) return;
     const windowHeight = window.innerHeight;
     const windowWidth = window.innerWidth;
     const bgLine = wrapperAbout.querySelector(".fil-scroll");

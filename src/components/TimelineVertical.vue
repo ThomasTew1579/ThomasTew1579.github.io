@@ -68,6 +68,7 @@ export default {
 
 document.addEventListener("DOMContentLoaded", function () {
     const timelineVertical = document.querySelector(".timeline-vertical");
+    if(!timelineVertical) return;
     const mediaQuery = window.matchMedia("(min-width: 768px)").matches;
 
     const gapContent = parseInt(window.getComputedStyle(timelineVertical, null).getPropertyValue("--gap-content"));
