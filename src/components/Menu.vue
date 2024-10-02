@@ -91,12 +91,12 @@ document.addEventListener("DOMContentLoaded", function () {
       <nav class="menu fixed top-0 left-0 w-full z-50 duration-300" >
             <div class="wrapper ">
                 <div class="links flex flex-row gap-4 items-center py-2 px-4 duration-500">
-                    <RouterLink to="/" class="home-logo group cursor-pointer overflow-hidden relative text-[25px] md:text-[33px] font-bold cursor-pointer duration-300 !leading-[160%] hover:pl-12 pl-2 text-white">Thomas</RouterLink>
+                    <RouterLink to="/" class="home-logo group overflow-hidden relative text-[25px] md:text-[33px] font-bold cursor-pointer duration-300 !leading-[160%] hover:pl-12 pl-2 text-white">Thomas</RouterLink>
                    
                     <div class="nav duration-500 fixed top-[85px] right-0 flex flex-col w-full max-h-[90vh] gap-6 items-center max-lg:bg-black/70 ease-[cubic-bezier(0.53, -0.23, 0.5, 1.16)] max-md:max-w-[95vw] py-12 rounded-md lg:contents max-lg:backdrop-blur-md max-lg:translate-x-[110%]">
                             <MenuItem title="Qui suis-je ?" link="/about" />                        
-                            <MenuItem title="Réalisations" link="/realisations" />                        
                             <MenuItem title="Experiences" link="/experiences" />                        
+                            <MenuItem title="Réalisations" link="/realisations" />                        
                             <MenuItem title="Formation" link="/formations" />                        
                             <ButtonPrimary title="Contactez moi" icon="arrow-right" link="#cta-contact" />                        
                     </div>
