@@ -25,10 +25,10 @@ export default {
         </span>
         <span class="icon group-hover:bg-primary-900 group-hover:text-primary-200 bg-primary-200 text-primary-900 size-[30px] p-[7px] overflow-hidden rounded-full duration-300">
             <svg viewBox="0 0 40 16" class="h-4 w-10 fill-current transition-all duration-200 translate-x-[-1.5rem] group-hover:translate-x-0">
-                <use v-if="!icon" href="/src/assets/sprite/far.svg#arrow-right" width="16" />
-                <use v-if="!icon" href="/src/assets/sprite/far.svg#arrow-right" width="16" x="24" />
-                <use v-if="icon" :href="'/src/assets/sprite/far.svg#' + icon" width="16" />
-                <use v-if="icon" :href="'/src/assets/sprite/far.svg#' + icon" width="16" x="24" />
+                <use v-if="!icon" href="/sprite/far.svg#arrow-right" width="16" />
+                <use v-if="!icon" href="/sprite/far.svg#arrow-right" width="16" x="24" />
+                <use v-if="icon" :href="'/sprite/far.svg#' + icon" width="16" />
+                <use v-if="icon" :href="'/sprite/far.svg#' + icon" width="16" x="24" />
             </svg>
         </span>
     </RouterLink>
@@ -38,10 +38,10 @@ export default {
         </span>
         <span class="icon group-hover:bg-primary-900 group-hover:text-primary-200 bg-primary-200 text-primary-900 size-[30px] p-[7px] overflow-hidden rounded-full duration-300">
             <svg viewBox="0 0 40 16" class="h-4 w-10 fill-current transition-all duration-200 translate-x-[-1.5rem] group-hover:translate-x-0">
-                <use v-if="!icon" href="/src/assets/sprite/far.svg#arrow-right" width="16" />
-                <use v-if="!icon" href="/src/assets/sprite/far.svg#arrow-right" width="16" x="24" />
-                <use v-if="icon" :href="'/src/assets/sprite/far.svg#' + icon" width="16" />
-                <use v-if="icon" :href="'/src/assets/sprite/far.svg#' + icon" width="16" x="24" />
+                <use v-if="!icon" href="/sprite/far.svg#arrow-right" width="16" />
+                <use v-if="!icon" href="/sprite/far.svg#arrow-right" width="16" x="24" />
+                <use v-if="icon" :href="'/sprite/far.svg#' + icon" width="16" />
+                <use v-if="icon" :href="'/sprite/far.svg#' + icon" width="16" x="24" />
             </svg>
         </span>
     </a>
