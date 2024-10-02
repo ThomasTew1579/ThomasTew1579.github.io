@@ -14,7 +14,7 @@ export default {
 <template>
   <HeroImage title="Formations" image="/image/illustrations/illu-form.webp" />
 
-  <Damier title="Développeur Full Stack chez Pilot’in" :order = "true" image="/image/photo-perso.jpg" >
+  <Damier title="Développeur Full Stack chez Pilot’in" :order = "true" image="/image/photo-perso.webp" >
     J'ai participé à la conception et à la mise en production de sites WordPress, tout en assurant la maintenance des sites et l'évolution des fonctionnalités. J’ai également contribué à la documentation interne et à la gestion des avant-ventes.
   </Damier>
 

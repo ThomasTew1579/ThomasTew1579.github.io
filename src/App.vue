@@ -36,7 +36,7 @@ export default {
     <RouterView />
     <CtaContact 
         title="Contactez Moi !" 
-        image="/image/blue.jpg" 
+        image="/image/blue.webp" 
         :btn1="btnContactTel" 
         :btn2="btnContactMail" 
       />
