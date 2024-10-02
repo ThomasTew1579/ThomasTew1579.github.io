@@ -68,104 +68,99 @@ export default {
 </template>
 
 <style>
+    .wrapper-about {
+        view-timeline: --wrapper-about;
+        --svg-height: 1050;
+        --value: 50;
+        --indice: calc(calc(calc(var(--value) / 100) / 2) - calc(calc(calc(var(--svg-height) / var(--window-height)) * 100) - 90) / 1000);
+        --ratio-svg-widow: calc(calc(var(--svg-height) / var(--window-height)) * 100);
+        --start-line: calc(calc(calc(var(--indice) * -1) * var(--ratio-svg-widow) + var(--value)));
+        --end-line: calc(calc(var(--indice) * var(--ratio-svg-widow) + var(--value)));
 
-
-
-.wrapper-about {
-    view-timeline: --wrapper-about;
-    --svg-height: 1050;
-    --value: 50;
-    --indice: calc(calc(calc(var(--value) / 100) / 2) - calc(calc(calc(var(--svg-height) / var(--window-height)) * 100) - 90) / 1000);
-    --ratio-svg-widow: calc(calc(var(--svg-height) / var(--window-height)) * 100);
-    --start-line: calc(calc(calc(var(--indice) * -1) * var(--ratio-svg-widow) + var(--value)));
-    --end-line: calc(calc(var(--indice) * var(--ratio-svg-widow) + var(--value)));
-
-    .fil-scroll {
-        z-index: -1;
-        position: absolute;
-        overflow: clip;
-        left: 0;
-        top: 0;
-        width: 100%;
-        height: 100%;
-        background: linear-gradient( 0deg, #252773 5%,  #252873e4 49%,#252873e4 70%, #252773 95%);
-        background-repeat: no-repeat;
-        background-size: 100% 100%;
-        animation-duration: 0.2s;
-        opacity: 1;
-
-        .bg-line {
-            --line-width: 1512px;
-            background: white;
-            mix-blend-mode: darken;
+        .fil-scroll {
+            z-index: -1;
+            position: absolute;
+            overflow: clip;
+            left: 0;
+            top: 0;
             width: 100%;
+            height: 100%;
+            background: linear-gradient( 0deg, #252773 5%,  #252873e4 49%,#252873e4 70%, #252773 95%);
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+            animation-duration: 0.2s;
+            opacity: 1;
 
-            .line-scroll {
-            margin-block: -2px;
-            overflow: visible;
-            & use {
-                stroke-linecap: round;
-                stroke-linejoin: round;
-                stroke-width: 70px;
-                fill: none;
-                stroke: #252773;
-                transform: translateX(calc(50vw - (var(--line-width) * 0.5)));
-                height: calc(var(--svg-height) * 1px);
-                animation-name: line-scroll;
-                animation-timing-function: linear;
-                animation-fill-mode: both;
-                animation-timeline: view(block);
-                animation-duration: 1ms;
-                animation-range: cover calc(var(--start-line) * 1%) cover
-                calc(var(--end-line) * 1%);
-            }
-            }
-        }
-    }
+            .bg-line {
+                --line-width: 1512px;
+                background: white;
+                mix-blend-mode: darken;
+                width: 100%;
 
-    
-    .bubble {
-        @apply hidden;
-    }
-    @supports (animation-timeline: view(block))  {
-        @media (min-width:768px) {
-            .content {
-                animation-name: wrapper-about;
-                animation-timing-function: linear;
-                animation-fill-mode: both;
-                animation-timeline: --wrapper-about;
-                animation-duration: 1ms;
-                animation-range: cover 0% cover 15%;
-            }
-            .bubble {
-                @apply block z-[49];
-                &.top {
-                    & path {
-                        animation-name: bubble-scroll-top;
-                        animation-timing-function: linear;
-                        animation-fill-mode: both;
-                        animation-timeline: --wrapper-about;
-                        animation-duration: 1ms;
-                        animation-range: cover 0% cover 20%;
-                    }
+                .line-scroll {
+                margin-block: -2px;
+                overflow: visible;
+                & use {
+                    stroke-linecap: round;
+                    stroke-linejoin: round;
+                    stroke-width: 70px;
+                    fill: none;
+                    stroke: #252773;
+                    transform: translateX(calc(50vw - (var(--line-width) * 0.5)));
+                    height: calc(var(--svg-height) * 1px);
+                    animation-name: line-scroll;
+                    animation-timing-function: linear;
+                    animation-fill-mode: both;
+                    animation-timeline: view(block);
+                    animation-duration: 1ms;
+                    animation-range: cover calc(var(--start-line) * 1%) cover
+                    calc(var(--end-line) * 1%);
                 }
-                &.bottom {
-                    & path {
-                        animation-name: bubble-scroll-bottom;
-                        animation-timing-function: linear;
-                        animation-fill-mode: both;
-                        animation-timeline: --wrapper-about;
-                        animation-duration: 1ms;
-                        animation-range: contain 0% cover 100%;
-                    }
                 }
             }
         }
-    }
-    }
 
         
-    
+        .bubble {
+            @apply hidden;
+        }
+        @supports (animation-timeline: view(block))  {
+            @media (min-width:768px) {
+                .content {
+                    animation-name: wrapper-about;
+                    animation-timing-function: linear;
+                    animation-fill-mode: both;
+                    animation-timeline: --wrapper-about;
+                    animation-duration: 1ms;
+                    animation-range: cover 0% cover 15%;
+                }
+                .bubble {
+                    @apply block z-[49];
+                    &.top {
+                        & path {
+                            animation-name: bubble-scroll-top;
+                            animation-timing-function: linear;
+                            animation-fill-mode: both;
+                            animation-timeline: --wrapper-about;
+                            animation-duration: 1ms;
+                            animation-range: cover 0% cover 20%;
+                        }
+                    }
+                    &.bottom {
+                        & path {
+                            animation-name: bubble-scroll-bottom;
+                            animation-timing-function: linear;
+                            animation-fill-mode: both;
+                            animation-timeline: --wrapper-about;
+                            animation-duration: 1ms;
+                            animation-range: contain 0% cover 100%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
     @keyframes wrapper-about {
         from {
             transform: translateY(10%);
