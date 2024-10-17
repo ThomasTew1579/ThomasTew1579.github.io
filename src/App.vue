@@ -3,13 +3,15 @@ import { RouterView } from 'vue-router'
 import Menu from './components/Menu.vue'
 import CtaContact from './components/CtaContact.vue'
 import Footer from './components/Footer.vue'
+import ButtonChrome from './components/ButtonChrome.vue'
 export default {
     name : "",
     components:{
       RouterView,
       Menu,
       Footer,
-      CtaContact
+      CtaContact,
+      ButtonChrome
     },
     data() {
       return {
@@ -41,6 +43,7 @@ export default {
         :btn2="btnContactMail" 
       />
   </main>
+  <ButtonChrome />
   <Footer />
 </template>
 
