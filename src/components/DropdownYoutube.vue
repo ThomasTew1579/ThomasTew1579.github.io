@@ -9,7 +9,6 @@ export default {
 
 document.addEventListener("DOMContentLoaded", function () {
     const dropdownYoutube = document.querySelectorAll(".dropdown-youtube");
-
     for(const section of dropdownYoutube) {
         const dropdowns = section.querySelectorAll(".video");
         closeAllDropdown();
