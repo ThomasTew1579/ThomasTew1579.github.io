@@ -23,14 +23,14 @@ export default {
 
 
 <template>
-    <section class="damier-about text-white relative flex flex-col gap-10 first:pt-8 md:first:pt-16 last:pb-8 md:last:pb-16 max-md:px-4">
+    <section class="damier-about text-white max-md:py-10 relative flex flex-col gap-10 first:pt-8 md:first:pt-16 last:pb-8 md:last:pb-16 max-md:px-4">
         <div class="max-w-[1680px] mx-auto grid grid-cols-1 lg:grid-cols-2 max-md:gap-8 items-center">
             <div v-if="!order" :class="{'hidden md:flex ': hideMobileImage}" class="image image-left z-10 overflow-clip relative h-[300px] lg:h-[600px] fade-in">
                 <img class="image-scroll absolute object-cover inset-0 w-full h-full" :src="image" alt="">
             </div>
             <div class="text flex px-6 md-px-12 flex-col gap-4">
-                <h2 :class="{'title-left text-end': order,'title-right': !order }" class="title title-2 fade-in">{{ title }}</h2>
-                <p :class="{'text-end': order}" class="fade-in">
+                <h2 :class="{'title-left md:text-end': order,'title-right': !order }" class="title title-2 fade-in">{{ title }}</h2>
+                <p :class="{'md:text-end': order}" class="fade-in">
                     <slot></slot>
                 </p>
                 <ButtonSecondary v-if="hasBtn && btn" :title="btn.title" icon="arrow-right" :link="btn.url" />  

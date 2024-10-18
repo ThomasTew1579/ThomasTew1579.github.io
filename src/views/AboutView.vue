@@ -72,7 +72,7 @@ export default {
 <template>
   <HeroImage title="Qui suis-je ?" image="/image/blue.webp" />
 
-  <div class="container mx-auto max-w-[1000px] flex flex-col gap-4 text-center">
+  <div class="container mx-auto max-w-[1000px] px-4 flex flex-col gap-4 text-center">
     <h2 class="title-3 fade-in">
       Thomas Pasquet
     </h2>

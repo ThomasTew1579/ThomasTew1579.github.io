@@ -35,23 +35,23 @@ export default {
 <template>
     <div v-for="(realisation, index) in realisations" :key="index" :class="realisation.type" class="realisation-type">
 
-        <div v-if="realisation.type == 'full-stack' ||realisation.type == 'front-end'" :id="realisation.type" class="realisation flex flex-col gap-3">
+        <div v-if="realisation.type == 'full-stack' || realisation.type == 'front-end'" :id="realisation.type" class="realisation flex flex-col gap-3">
             <h2 class="title-5 title-type mb-6 fade-in">
                 {{ realisation.typeName }}
             </h2>
             <div class="content-realisation flex flex-col gap-3">
-                <div v-for="(content, index) in realisation.content" :key="index + content.name" class="realisation-full-stack container xl:max-w-[1400px] text-white fade-in gap-2 pl-4 lg:pl-8">
+                <div v-for="(content, index) in realisation.content" :key="index + content.name" class="realisation-full-stack container xl:max-w-[1400px] text-white fade-in gap-2 lg:pl-8">
                     <div class="grid grid-cols-1 md:grid-cols-2 md:gap-4 bg-primary-600 rounded-md overflow-clip">
                         <div class="content-damier flex flex-col gap-2 h-full justify-center p-10">
-                            <h3 class="title-6">
+                            <h3 class="title-6 font-semibold">
                                 {{ content.name }}
                             </h3>
-                            <p class="desc mt-4">
+                            <p class="desc ">
                                 {{ content.text }}
                             </p>
-                            <ButtonTertiary v-if="content.url" :link="content.url" title="Lien vers le site" class="mt-4" />
+                            <ButtonTertiary v-if="content.url" target="_blank" :link="content.url" title="Lien vers le site" class="mt-auto" />
                         </div>
-                        <div class="pc-screen relative w-full">
+                        <div class="pc-screen relative w-full max-md:hidden">
                             <img class="pc relative w-full" src="/image/pc_2.webp" alt="">
                             <div class="screen reverse absolute top-[23.2%]  h-[30%] w-[42.6%] overflow-clip rounded-[2px]">
                                 <img class="site w-full scroll-screen " :src="content.media" alt="">
@@ -114,7 +114,7 @@ export default {
                             <p class="desc mt-4">
                                 {{ content.text }}
                             </p>
-                            <ButtonTertiary v-if="content.url" :link="content.url" title="Lien vers le site" class="mt-4" />
+                            <ButtonTertiary v-if="content.url" target="_blank" :link="content.url" title="Lien vers le site" class="mt-4" />
                         </div>
                         <div class="pc-screen relative w-full">
                             <img class="pc relative w-full" src="/image/pc_2.webp" alt="">
