@@ -28,15 +28,18 @@ export default {
                 </div>
 
             </div>
-        </section>
+            <div class="background-wave-2 z-[-2] absolute inset-0 overflow-clip">
+                <img class="img-wave absolute top-0 left-0 w-full h-full" src="/image/wave-3.svg" alt="">
+            </div>
+    </section>
 </template>
 
 <style>
     .hero {
         @apply h-[90dvh] md:h-[100dvh] flex justify-center flex-col items-center;
  
-        .background-wave {
-            @apply hidden;
+        .background-wave-2 {
+            background: linear-gradient(240deg, rgba(84,58,183,1) 0%, rgba(0,172,193,1) 100%);
         }
         .title {
             @apply hidden;
@@ -46,11 +49,7 @@ export default {
             mask: url(/image/wave-2-mask.svg)  ;
             -webkit-mask: url(/image/wave-2-mask.svg)  ;
             .title-1 {
-                @apply block w-full text-center;
-                background: linear-gradient(240deg, rgba(84,58,183,1) 0%, rgba(0,172,193,1) 100%);
-                background-clip: text;
-                color: transparent;
-
+                @apply block w-full text-center text-white;
             }
         }
 
@@ -64,6 +63,9 @@ export default {
             }
             height: var(--hero-height);  
             view-timeline: --hero-scroll-wave; 
+            .background-wave-2 {
+                    @apply hidden;
+                }
             .surtitle {
                 @apply z-[1] w-full relative;
                 mask: url(/image/wave-2-mask.svg)  ;
