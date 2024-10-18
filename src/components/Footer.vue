@@ -15,7 +15,7 @@ export default {
         <div class="container">
             <div class="content grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 p-10 bg-primary-900 text-white rounded-t-2xl md:pb-20">
                 <div class="col-1 flex flex-row gap-2">
-                    <RouterLink to="/" class="w-28 h-28 relative block">
+                    <RouterLink to="/" class="md:w-28 md:h-28 w-16 h-16 relative block">
                         <img src="/image/logo.svg" alt="" class="logo">
                     </RouterLink>
                     <div class="flex flex-col gap-2">
@@ -25,16 +25,13 @@ export default {
                         <p >Developeur Front-end</p>
                     </div>
                 </div>
-                <div class="col-3 ml-auto flex flex-col gap-2">
-                    <strong class="text-xl mb-2">
-                        Liens
-                    </strong>
-                    <FooterItem title="Qui suis-je ?" link="/#cta-contact" />                        
-                    <FooterItem title="Réalisations" link="/#cta-contact" />                        
-                    <FooterItem title="Experiences" link="/#cta-contact" />                        
-                    <FooterItem title="Formation" link="/#cta-contact" />    
+                <div class="col-3 md:ml-auto flex flex-col gap-2">
+                    <FooterItem title="Qui suis-je ?" link="/about" />                        
+                    <FooterItem title="Experiences" link="/experiences" />                        
+                    <FooterItem title="Réalisations" link="/realisations" />                        
+                    <FooterItem title="Formation" link="/formations" />    
                 </div>
-                <div class="col-4 ml-auto flex flex-col gap-2">
+                <div class="col-4 md:ml-auto flex flex-col gap-2">
                     <strong class="text-xl mb-2">
                         Contact
                     </strong>
@@ -49,17 +46,17 @@ export default {
                         </span>
                     </a>
                     <div class="reseaux flex flex-row gap-2">
-                        <a href="" class="github">
+                        <a href="https://github.com/ThomasTew1579" target="_blank" class="github">
                             <svg viewBox="0 0 40 40" class="h-10 w-10 fill-current transition-all duration-100 rounded-full outline outline-0 outline-white hover:outline-1">
                                 <use href="/sprite/fab.svg#github" width="26" x="7" />
                             </svg>
                         </a>
-                        <a href="" class="linkedin">
+                        <a href="https://www.linkedin.com/in/pasquet-thomas/" target="_blank" class="linkedin">
                             <svg viewBox="0 0 40 40" class="h-10 w-10 fill-current transition-all duration-100 rounded-full outline outline-0 outline-white hover:outline-1">
                                 <use href="/sprite/fab.svg#linkedin" width="26" x="7" />
                             </svg>
                         </a>
-                        <a href="" class="insta">
+                        <a href="https://www.instagram.com/tew_1579/" target="_blank" class="insta">
                             <svg viewBox="0 0 40 40" class="h-10 w-10 fill-current transition-all duration-100 rounded-full outline outline-0 outline-white hover:outline-1">
                              <use href="/sprite/fab.svg#instagram" width="26" x="7" />
                             </svg>
