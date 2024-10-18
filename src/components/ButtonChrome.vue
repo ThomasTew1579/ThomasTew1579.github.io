@@ -12,7 +12,7 @@ export default {
 
 
 <template>
-    <div class="btn-chrome fixed bottom-5 right-5 hover:w-[200px] hover:h-[190px] outline outline-2 outline-white transition-all duration-300 outline-offset-2 z-50 w-10 h-10 overflow-hidden bg-white rounded-[20px] p-2">
+    <div class="btn-chrome max-md:hidden fixed bottom-5 right-5 hover:w-[200px] hover:h-[190px] outline outline-2 outline-white transition-all duration-300 outline-offset-2 z-50 w-10 h-10 overflow-hidden bg-white rounded-[20px] p-2">
         <img class=" w-10" src="/image/chrome.webp" alt="logo google chrome">
         <p class="text-xs mt-1 p-2">
             Vous naviguez actuellement sur une version allégée du site. Pour une expérience complète, je vous recommande de le visiter depuis un navigateur web basé sur Chromium.
