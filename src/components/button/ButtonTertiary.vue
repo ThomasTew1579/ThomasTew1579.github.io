@@ -5,6 +5,7 @@ export default {
     props : {
         title : String,
         link : String,
+        target : String,
         linkRouter : String,
         class : String,
         icon : String,
@@ -13,7 +14,7 @@ export default {
 </script>
 
 <template>
-    <RouterLink v-if="linkRouter" :to="linkRouter" :class="class" class="btn-tertiary cursor-pointer group text-white bg-black/15 hover:bg-white hover:text-primary-900 group w-fit py-[10px] px-[19px] font-semibold text-base rounded-full relative overflow-hidden select-none touch-manipulation transition-all duration-300 inline-flex items-center gap-2.5">
+    <RouterLink v-if="linkRouter" :to="linkRouter" :class="class" :target="target" class="btn-tertiary cursor-pointer group text-white bg-black/15 hover:bg-white hover:text-primary-900 group w-fit py-[10px] px-[19px] font-semibold text-base rounded-full relative overflow-hidden select-none touch-manipulation transition-all duration-300 inline-flex items-center gap-2.5">
         <span class="content">
             {{ title }}
         </span>
@@ -26,7 +27,7 @@ export default {
             </svg>
         </span>
     </RouterLink>
-    <a v-if="!linkRouter" :href="link" :class="class" class="btn-tertiary link cursor-pointer group text-white bg-black/15 hover:bg-white hover:text-primary-900 group w-fit py-[10px] px-[19px] font-semibold text-base rounded-full relative overflow-hidden select-none touch-manipulation transition-all duration-300 inline-flex items-center gap-2.5">
+    <a v-if="!linkRouter" :href="link" :class="class" :target="target" class="btn-tertiary link cursor-pointer group text-white bg-black/15 hover:bg-white hover:text-primary-900 group w-fit py-[10px] px-[19px] font-semibold text-base rounded-full relative overflow-hidden select-none touch-manipulation transition-all duration-300 inline-flex items-center gap-2.5">
         <span class="content">
             {{ title }}
         </span>
