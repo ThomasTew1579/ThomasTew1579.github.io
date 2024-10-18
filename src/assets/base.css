@@ -18,19 +18,19 @@ body {
         @apply font-primary text-[8vw] mx-0 leading-none;
     }
     .title-2 {
-        @apply font-primary text-[80px] md:text-[100px] font-bold mx-0 leading-none;
+        @apply font-primary text-[50px] md:text-[100px] font-bold mx-0 leading-none;
     }
     .title-3 {
-        @apply font-primary text-[870px] md:text-[6vw] mx-0 leading-none;
+        @apply font-primary text-[40px] md:text-[6vw] mx-0 leading-none;
     }
     .title-4 {
-        @apply font-primary text-[60px] md:text-[80px] mx-0 leading-none;
+        @apply font-primary text-[30px] md:text-[80px] mx-0 leading-none;
     }
     .title-5 {
-        @apply font-primary text-[50px] md:text-[70px] mx-0 leading-none;
+        @apply font-primary text-[20px] md:text-[70px] mx-0 leading-none;
     }
     .title-6 {
-        @apply text-[20px] md:text-[40px] mx-0 leading-none;
+        @apply text-[20px] md:text-[20px] mx-0 leading-none;
     }
     .container {
         @apply mx-auto;
