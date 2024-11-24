@@ -1,5 +1,7 @@
 <script>
 import WrapperRealisationsType from '../components/WrapperRealisationsType.vue';
+import { RouterLink } from 'vue-router';
+
 export default {
     name : "ArchiveRealisations",
     components: {
@@ -13,9 +15,15 @@ export default {
             typeName:"Projet full stack",
             content: [
             {
-                name:"Inser-eco93 ",
+                name:"Famoco ",
                 text:"Développement front-end et back-end pour un site vitrine. Projet réalisé seul avec satisfaction du client. Ce projet m'a permis d’appliquer mon expertise pour créer un site fonctionnel et ergonomique.",
-                media:"/image/screen/insereco.webp",
+                media:"/image/screen/famoco.webp",
+              },
+            {
+              url:"https://www.pourquery.fr/",
+                name:"Pourquery",
+                text:"Développement front-end et back-end pour un site vitrine. Projet réalisé seul avec satisfaction du client. Ce projet m'a permis d’appliquer mon expertise pour créer un site fonctionnel et ergonomique.",
+                media:"/image/screen/pourquery.webp",
               },
               {
                 url:"https://urps-mk-ara.org/",
@@ -61,6 +69,12 @@ export default {
                 name:"MTB pour nos enfants",
                 text:"Développement full-stack avec intégration d’animations au scroll. Le client a apprécié l'interactivité du site. Les animations apportent une touche dynamique tout en garantissant une navigation fluide.",
                 media:"/image/screen/mtbpne.webp",
+              },
+              {
+                url:"https://www.gindre.com/",
+                name:"Gindre",
+                text:"Développement front-end et back-end pour un site vitrine. Projet réalisé seul avec satisfaction du client. Ce projet m'a permis d’appliquer mon expertise pour créer un site fonctionnel et ergonomique.",
+                media:"/image/screen/gindre.webp",
               },
               {
                 url:"https://www.manerty.com/",

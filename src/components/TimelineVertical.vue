@@ -26,10 +26,10 @@ export default {
             texts:[
                 "Développement front end et intégration de contenu",
                 "Amélioration continue des fonctionnements internes",
-                "Référent et garant des développements Front avancés",
+                "Référant et garant des développements Front avancés",
                 "Responsable des échanges et de la communication interne entre les pôles dev & design au sein de l’agence",
             ],
-            drawer:"Dans mon rôle de développeur front-end, j'étais chargé d'intégrer des designs et de développer des fonctionnalités avancées en utilisant des technologies comme HTML, CSS, JavaScript, et PHP. J’ai amélioré en continu les process internes, en prenant également le rôle de référent technique pour les projets front-end complexes. En plus de ma responsabilité sur le développement, j'étais le point de contact entre l'équipe de développement et celle de design, assurant ainsi une communication fluide et une cohérence entre la conception graphique et la réalisation technique. Ce poste m'a permis de renforcer mon expertise en front-end tout en affinant ma gestion de projet et mes capacités de travail en équipe.",
+            drawer:"Dans mon rôle de développeur front-end, j'étais chargé d'intégrer des designs et de développer des fonctionnalités avancées en utilisant des technologies comme HTML, CSS, JavaScript, et PHP. J’ai amélioré en continu les process internes, en prenant également le rôle de référant technique pour les projets front-end complexes. En plus de ma responsabilité sur le développement, j'étais le point de contact entre l'équipe de développement et celle de design, assurant ainsi une communication fluide et une cohérence entre la conception graphique et la réalisation technique. Ce poste m'a permis de renforcer mon expertise en front-end tout en affinant ma gestion de projet et mes capacités de travail en équipe.",
           },
           {
             label:"Régisseur Lumière dans le Spectacle Vivant et l'Événementiel",
@@ -47,7 +47,7 @@ export default {
             icon:'bolt',
             texts:[
                 "Chargé de la maintenance d’un parc de machines de production continue",
-                "Calcul et dimmensionement d’ installation de distribution",
+                "Calcul et dimmensionnement d’ installation de distribution",
                 "Mise à jour de schémas éléctriques",
             ],
             drawer:"Au sein de plusieurs entreprises, j’ai occupé le poste d'électromécanicien, où j’étais chargé de la maintenance de parcs de machines industrielles en production continue. Cela incluait le calcul et le dimensionnement des installations électriques, ainsi que la mise à jour régulière de schémas électriques. Mon rôle était essentiel pour assurer le bon fonctionnement et la longévité des machines, tout en respectant les normes de sécurité et de qualité en vigueur. Ces responsabilités m’ont permis de développer une rigueur méthodique et une approche analytique des problématiques techniques.",
@@ -59,15 +59,17 @@ export default {
                 "Gestion de silo agricole",
                 "Castration du mais",
             ],
-            drawer:"Lors de mes études, j'ai également travaillé sur divers projets et missions en tant que job étudiant, notamment dans le secteur agricole avec Terrena, où j’ai géré un silo agricole, et dans le domaine de la castration du maïs. Ces expériences m'ont inculqué un fort sens des responsabilités, de l’autonomie, ainsi qu'une excellente capacité d’adaptation à différents environnements de travail.",
+            drawer:"Lors de mes études, j'ai également travaillé sur divers projets et missions en tant que job étudiant, notamment dans le secteur agricole avec Terrena, où j’ai géré un silo agricole, et la castration du maïs. Ces expériences m'ont inculqué un fort sens des responsabilités, de l’autonomie, ainsi qu'une excellente capacité d’adaptation à différents environnements de travail.",
           },
         ],
       }
-    }
-}
-
-document.addEventListener("DOMContentLoaded", function () {
-    const timelineVertical = document.querySelector(".timeline-vertical");
+    },
+    mounted() {
+    this.sectionTimline();
+  },
+  methods: {
+    sectionTimline() {
+        const timelineVertical = document.querySelector(".timeline-vertical");
     if(!timelineVertical) return;
     const mediaQuery = window.matchMedia("(min-width: 768px)").matches;
 
@@ -178,7 +180,9 @@ document.addEventListener("DOMContentLoaded", function () {
         }
         overlayDrawer.classList.remove("active-drawer");
     }
-})
+    }
+  }
+}
 
 </script>
 

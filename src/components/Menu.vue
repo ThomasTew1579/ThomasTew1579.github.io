@@ -19,6 +19,7 @@ export default {
 document.addEventListener("DOMContentLoaded", function () {
     const menu = document.querySelector(".menu");
     const burger = menu.querySelector(".burger");
+    const nav = menu.querySelector(".nav");
     let didScroll = false;
     var lastScrollTop = 0;
     const delta = 10;
@@ -80,6 +81,8 @@ document.addEventListener("DOMContentLoaded", function () {
             menu.dataset.menuIsOpen = "";
         }
     }
+
+    nav.addEventListener("click", handleClickMenu);
     burger.addEventListener("click", handleClickMenu);
     window.addEventListener("scroll", handlePageScroll);
  })
@@ -88,17 +91,18 @@ document.addEventListener("DOMContentLoaded", function () {
 </script>
 
 <template>
-      <nav class="menu fixed top-0 left-0 w-full z-50 duration-300" >
+      <nav class="menu fixed top-0 left-0 z-50 duration-300 w-screen" >
             <div class="wrapper ">
                 <div class="links flex flex-row gap-4 items-center py-2 px-4 duration-500">
-                    <RouterLink to="/" class="home-logo group overflow-hidden relative text-[25px] md:text-[33px] font-bold cursor-pointer duration-300 !leading-[160%] hover:pl-12 pl-2 text-white">Thomas</RouterLink>
+                    <RouterLink to="/" class="home-logo group overflow-hidden relative text-[25px] md:text-[33px] font-bold cursor-pointer duration-300 !leading-[160%] md:hover:pl-12 pl-2 text-white">Thomas</RouterLink>
                    
                     <div class="nav duration-500 fixed top-[85px] right-0 flex flex-col w-full max-h-[90vh] gap-6 items-center max-lg:bg-black/70 ease-[cubic-bezier(0.53, -0.23, 0.5, 1.16)] max-md:max-w-[95vw] py-12 rounded-md lg:contents max-lg:backdrop-blur-md max-lg:translate-x-[110%]">
-                            <MenuItem title="Qui suis-je ?" link="/about" />                        
-                            <MenuItem title="Experiences" link="/experiences" />                        
-                            <MenuItem title="Réalisations" link="/realisations" />                        
-                            <MenuItem title="Formation" link="/formations" />                        
-                            <ButtonPrimary title="Contactez moi" icon="arrow-right" link="#cta-contact" />                        
+                            <MenuItem title="Qui suis-je ?" linkRouter="/about" />                        
+                            <MenuItem title="Experiences" linkRouter="/experiences" />                        
+                            <MenuItem title="Réalisations" linkRouter="/realisations" />                        
+                            <MenuItem title="Formation" linkRouter="/formations" />                        
+                            <ButtonPrimary title="Contactez moi" icon="envelope" linkRouter="#" hashRooter="#cta-contact" />                        
+                            <ButtonPrimary title="Mon CV" icon="download" link="/image/CV_Thomas_PASQUET.pdf" target="_blank" />                        
                     </div>
                     <button class="burger padding-0 relative ml-auto flex cursor-pointer items-center border-none bg-transparent outline-none lg:hidden" aria-label="Main Menu">
                         <svg width="40" height="40" viewBox="0 0 100 100">
@@ -162,7 +166,7 @@ body {
 .menu {
     .home-logo {
         &:before {
-            @apply absolute left-0 top-1 opacity-0 w-10 h-10 rotate-45 scale-0 duration-300;
+            @apply max-md:hidden absolute left-0 top-1 opacity-0 w-10 h-10 rotate-45 scale-0 duration-300;
             content: url(/image/logo.svg);
         }
         &:hover {
