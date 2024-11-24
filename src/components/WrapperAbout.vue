@@ -1,15 +1,16 @@
 <script>
 export default {
     name : "WrapperAbout",
- }
-
- document.addEventListener("DOMContentLoaded", function () {
-     const wrapperAbout = document.querySelector(".wrapper-about");
+    mounted() {
+    this.animationLine();
+  },
+  methods: {
+    animationLine() {
+        const wrapperAbout = document.querySelector(".wrapper-about");
      if(!wrapperAbout) return;
     const windowHeight = window.innerHeight;
     const windowWidth = window.innerWidth;
     const bgLine = wrapperAbout.querySelector(".fil-scroll");
-    const hero = wrapperAbout.querySelector(".hero-image");
     const bodyHeight = wrapperAbout.clientHeight;
     const lines = bgLine.querySelectorAll(".line-scroll");
     
@@ -31,7 +32,9 @@ export default {
     window.addEventListener("resize", () => {
         initLine();
     })
- })
+    }
+  }
+ }
 
 </script>
 
