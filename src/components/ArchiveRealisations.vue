@@ -157,12 +157,12 @@ export default {
             <div class="sidebar">
                 <div class="content sticky flex flex-col gap-4 px-4 duration-300">
                   <strong class="text-xl">Type de projet :</strong>
-                  <a v-for="(realisation, index) in realisations" :key="index" :href="'#'+realisation.type" class="types px-4 py-2 rounded-sm bg-primary-100 hover:text-white hover:bg-primary-900 duration-200 flex group overflow-hidden whitespace-nowrap pr-12 flex-row items-center gap-2">
+                  <RouterLink v-for="(realisation, index) in realisations" :key="index" :to="{ path: '#', hash: '#'+realisation.type }" class="types px-4 py-2 rounded-sm bg-primary-100 hover:text-white hover:bg-primary-900 duration-200 flex group overflow-hidden whitespace-nowrap pr-12 flex-row items-center gap-2">
                     {{ realisation.typeName }}
-                      <svg viewBox="0 0 16 16" class="h-4 w-4 z-10 fill-white absolute right-4 transition-all duration-500 translate-x-[200%] group-hover:translate-x-0">
+                      <svg viewBox="0 0 16 16" class="h-4 w-4 z-10 fill-white absolute right-6 transition-all duration-500 translate-x-[200%] group-hover:translate-x-0">
                         <use href="/sprite/far.svg#arrow-right" width="16" />
                     </svg>
-                  </a>
+                  </RouterLink>
                 </div>
             </div>
             <div class="realisations flex flex-col gap-10 max-md:px-4">

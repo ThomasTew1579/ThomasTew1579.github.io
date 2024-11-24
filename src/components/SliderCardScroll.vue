@@ -63,7 +63,7 @@ export default {
         </Splide>
         <div class="container">
             <div class="outro flex justify-center">
-                <ButtonSecondary link="/realisations" title="Voir tout" />
+                <ButtonSecondary linkRouter="/realisations" title="Voir tout" />
             </div>
         </div>
     </section>

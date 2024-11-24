@@ -15,8 +15,8 @@ export default {
         <div class="container">
             <div class="content grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 p-10 bg-primary-900 text-white rounded-t-2xl md:pb-20">
                 <div class="col-1 flex flex-row gap-2">
-                    <RouterLink to="/" class="md:w-28 md:h-28 w-16 h-16 relative block">
-                        <img src="/image/logo.svg" alt="" class="logo">
+                    <RouterLink to="/" class="md:w-28 md:h-28 w-16 h-16 relative block" aria-label="home-page">
+                        <img src="/image/logo.svg" alt="logo" class="logo">
                     </RouterLink>
                     <div class="flex flex-col gap-2">
                         <strong class="text-2xl">
@@ -26,10 +26,10 @@ export default {
                     </div>
                 </div>
                 <div class="col-3 md:ml-auto flex flex-col gap-2">
-                    <FooterItem title="Qui suis-je ?" link="/about" />                        
-                    <FooterItem title="Experiences" link="/experiences" />                        
-                    <FooterItem title="Réalisations" link="/realisations" />                        
-                    <FooterItem title="Formation" link="/formations" />    
+                    <FooterItem title="Qui suis-je ?" linkRouter="/about" />                        
+                    <FooterItem title="Experiences" linkRouter="/experiences" />                        
+                    <FooterItem title="Réalisations" linkRouter="/realisations" />                        
+                    <FooterItem title="Formation" linkRouter="/formations" />    
                 </div>
                 <div class="col-4 md:ml-auto flex flex-col gap-2">
                     <strong class="text-xl mb-2">

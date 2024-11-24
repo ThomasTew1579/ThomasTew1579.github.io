@@ -37,7 +37,7 @@ export default {
                 <p class="fade-in">
                     <slot></slot>
                 </p>
-                <ButtonSecondary v-if="hasBtn && btn" :title="btn.title" icon="arrow-right" :link="btn.url" />  
+                <ButtonSecondary v-if="hasBtn && btn" :title="btn.title" icon="arrow-right" :linkRouter="btn.url" />  
             </div>
             <div v-if="order" :class="{'hidden md:flex ': hideMobileImage}" class="image overflow-clip rounded-2xl relative h-[300px] lg:h-[400px] fade-in">
                 <img class="image-scroll absolute object-cover inset-0 w-full h-full" :src="image" alt="">
