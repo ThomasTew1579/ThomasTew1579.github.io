@@ -4,30 +4,35 @@ export default {
     props : {
         items : Array,
     },
+    mounted() {
+    this.dropdownYoutube();
+  },
+  methods: {
+    dropdownYoutube() {
+        const dropdownYoutube = document.querySelectorAll(".dropdown-youtube");
+        for(const section of dropdownYoutube) {
+            const dropdowns = section.querySelectorAll(".video");
+            closeAllDropdown();
+            dropdowns[2].dataset.open="true";
+            section.dataset.init="true";
+
+            for(const dropdown of dropdowns) {
+                dropdown.addEventListener("mouseenter", () => {
+                    closeAllDropdown();
+                    dropdown.dataset.open="true";
+                })
+            }
+            function closeAllDropdown () {
+                for(const dropdown of dropdowns) {
+                    dropdown.dataset.open="false";
+                } 
+            }
+        }
+    }
+  }
  }
 
 
-document.addEventListener("DOMContentLoaded", function () {
-    const dropdownYoutube = document.querySelectorAll(".dropdown-youtube");
-    for(const section of dropdownYoutube) {
-        const dropdowns = section.querySelectorAll(".video");
-        closeAllDropdown();
-        dropdowns[2].dataset.open="true";
-        section.dataset.init="true";
-
-        for(const dropdown of dropdowns) {
-            dropdown.addEventListener("mouseenter", () => {
-                closeAllDropdown();
-                dropdown.dataset.open="true";
-            })
-        }
-        function closeAllDropdown () {
-            for(const dropdown of dropdowns) {
-                dropdown.dataset.open="false";
-            } 
-        }
-    }
-});
 </script>
 
 
