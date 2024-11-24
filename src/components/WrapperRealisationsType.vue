@@ -49,7 +49,7 @@ export default {
                             <p class="desc ">
                                 {{ content.text }}
                             </p>
-                            <ButtonTertiary v-if="content.url" target="_blank" :link="content.url" title="Lien vers le site" class="mt-auto" />
+                            <ButtonTertiary v-if="content.url" target="_blank" :link="content.url" title="Lien vers le site" class="max-xl:mt-auto mt-10" />
                         </div>
                         <div class="pc-screen relative w-full max-md:hidden">
                             <img class="pc relative w-full" src="/image/pc_2.webp" alt="">
