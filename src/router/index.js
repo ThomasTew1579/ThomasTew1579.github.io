@@ -1,4 +1,4 @@
-import { createRouter, createWebHistory } from 'vue-router'
+import { createRouter, createWebHashHistory } from 'vue-router'
 import HomeView from '../views/HomeView.vue'
 import AboutView from '../views/AboutView.vue'
 import RealisationsView from '../views/RealisationsView.vue'
@@ -6,7 +6,7 @@ import ExpreienceView from '../views/ExpreienceView.vue'
 import FormationsView from '../views/FormationsView.vue'
 
 const router = createRouter({
-  history: createWebHistory(import.meta.env.BASE_URL),
+  history: createWebHashHistory(import.meta.env.BASE_URL), 
   routes: [
     {
       path: '/',
@@ -33,7 +33,19 @@ const router = createRouter({
       name: 'formations',
       component: FormationsView
     }
-  ]
+  ],
+  scrollBehavior(to, from, savedPosition) {
+    if (to.hash) {
+      return {
+        el: to.hash,
+        behavior: 'smooth',
+      }
+    } else if (savedPosition) {
+      return savedPosition
+    } else {
+      return { top: 0 }
+    }
+  }
 })
 
 export default router
