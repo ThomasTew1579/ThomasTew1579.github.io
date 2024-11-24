@@ -12,7 +12,7 @@ export default {
 
 <template>
       <section class="hero-image h-screen overflow-clip relative">
-        <img class="image-scroll opacity-70 absolute object-cover aspcet-square max-md:h-full inset-0 z-0 w-full" :src="image" alt="">
+        <img class="image-scroll opacity-90 absolute object-cover aspcet-square max-md:h-full inset-0 z-0 w-full" :src="image" alt="">
         <div class="content h-full flex flex-col justify-center items-center z-[1] relative ">
             <div class="text text-white w-full pt-1 pb-2 text-center backdrop-blur-[20px] backdrop-brightness-75 shadow-lg">
                 <div class="container mx-auto">
