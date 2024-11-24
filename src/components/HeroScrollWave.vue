@@ -39,6 +39,7 @@ export default {
         @apply h-[90dvh] md:h-[100dvh] flex justify-center flex-col items-center;
  
         .background-wave-2 {
+            animation: anim-bg-hero-wave 2s infinite;
             background: linear-gradient(240deg, rgba(84,58,183,1) 0%, rgba(0,172,193,1) 100%);
         }
         .title {
@@ -119,14 +120,14 @@ export default {
     }
 
     @keyframes hero-scroll-wave {
-    from {
-        transform: translateY(0%);
+        from {
+            transform: translateY(0%);
+        }
+        60% {
+            transform: translateY(0%);
+        }
+        to {
+            transform: translateY(-10%);
+        }
     }
-    60% {
-        transform: translateY(0%);
-    }
-    to {
-        transform: translateY(-10%);
-    }
-}
 </style>
