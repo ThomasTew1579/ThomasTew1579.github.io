@@ -12,56 +12,56 @@ export default {
         realisations : [
           {
             type:"full-stack",
-            typeName:"Projet full stack",
+            typeName:"Projets full-stack",
             content: [
             {
                 name:"Famoco ",
-                text:"Développement front-end et back-end pour un site vitrine. Projet réalisé seul avec satisfaction du client. Ce projet m'a permis d’appliquer mon expertise pour créer un site fonctionnel et ergonomique.",
+                text:"Développement front-end et back-end pour un site vitrine. Projet réalisé en duo. Ce projet m'a permis d’appliquer mon expertise pour créer un site fonctionnel et ergonomique.",
                 media:"/image/screen/famoco.webp",
               },
             {
               url:"https://www.pourquery.fr/",
                 name:"Pourquery",
-                text:"Développement front-end et back-end pour un site vitrine. Projet réalisé seul avec satisfaction du client. Ce projet m'a permis d’appliquer mon expertise pour créer un site fonctionnel et ergonomique.",
+                text:"Développement en solo du front-end et back-end d'un site vitrine. Ce projet m'a permis d’appliquer mon expertise pour créer un site fonctionnel et ergonomique.",
                 media:"/image/screen/pourquery.webp",
               },
               {
                 url:"https://urps-mk-ara.org/",
                 name:"URPS MK ARA",
-                text:"Création d’un filtre d’archives et d’une carte interactive en front-end et back-end. Client très satisfait du résultat. Cette solution technique complexe a amélioré considérablement l'expérience utilisateur en facilitant la recherche d’informations.",
+                text:"En plus du site lui-même, j'ai créé un filtre d’archives et une carte interactive (front-end et back-end). Client très satisfait du résultat. Cette solution technique complexe a amélioré considérablement l'expérience utilisateur en facilitant la recherche d’informations.",
                 media:"/image/screen/urps-mk-ara.webp",
               },
               {
                 url:"https://pilot-in.com/",
                 name:"Pilot'in",
-                text:"Premier gros projet full-stack réalisé seul. Le client a été satisfait du développement front-end et back-end. Cette réalisation a marqué une étape importante dans ma carrière en consolidant mes compétences techniques et ma gestion de projets d'envergure.",
+                text:"Premier projet d'envergure sur lequel je suis intervenu en full-stack, sur le site de l'agence. Cette réalisation a marqué une étape importante dans ma carrière en consolidant mes compétences techniques et d'organisation de mon travail.",
                 media:"/image/screen/pilotin.webp",
               },
               {
                 url:"https://neoloc-immobilier.fr/",
                 name:"Neoloc",
-                text:"Refonte totale du site vitrine en front-end et back-end sans maquette. Résultat satisfaisant, le client continue de collaborer. J’ai su proposer des solutions efficaces pour répondre aux attentes du client tout en offrant une navigation optimisée.",
+                text:"Refonte totale du site vitrine en front-end et back-end, sans maquettes. Satisfait, le client continue de collaborer. J’ai su proposer des solutions efficaces pour répondre aux attentes du client tout en offrant une navigation optimisée.",
                 media:"/image/screen/neoloc.webp",
               },
               {
                 url:"https://novely-renovation.fr/",
                 name:"Novely",
-                text:"Refonte complète du site vitrine sans maquette, en front-end et back-end. Client satisfait du travail réalisé. J’ai pris des décisions créatives et techniques pour moderniser le site et améliorer son attractivité.",
+                text:"Refonte complète du site vitrine, sans maquettes, en front-end et back-end. Client satisfait du travail réalisé. J’ai pris des décisions créatives et techniques pour moderniser le site et améliorer son attractivité.",
                 media:"/image/screen/novely.webp",
               },
               {
                 name:"Serpol",
-                text:"Développement complet front-end et back-end pour Serpol, branche de Serfim. Projet terminé avec succès. Client satisfait. Le site est conçu pour être évolutif et adaptable aux besoins futurs de l’entreprise.",
+                text:"Déclinaison front-end et back-end pour Serpol, branche de Serfim. Projet terminé avec succès. Client satisfait. Le site est conçu pour être évolutif et adaptable aux besoins futurs de l’entreprise.",
                 media:"/image/screen/serpol.webp",
               },
               {
                 name:"Serfim TIC",
-                text:"Développement front-end et back-end. Site structuré et performant livré avec satisfaction du client. Ce projet a renforcé ma capacité à concevoir des solutions stables pour des entreprises à forte exigence technique.",
+                text:"Déclinaison full-stack du site parent. Site structuré et performant livré avec satisfaction du client. Ce projet a renforcé ma capacité à concevoir des solutions stables pour des entreprises à forte exigence technique.",
                 media:"/image/screen/serfimtic.webp",
               },
               {
                 name:"Terenvie",
-                text:"Développement front-end et back-end pour cette branche de Serfim. Résultats très positifs et client satisfait. J’ai assuré un développement fluide et respecté les délais tout en garantissant une qualité optimale.",
+                text:"Déclinaison front-end et back-end pour cette branche de Serfim. Résultats très positifs et client satisfait. J’ai assuré un développement fluide et respecté les délais tout en garantissant une qualité optimale.",
                 media:"/image/screen/terrenvie.webp",
               },
               {
@@ -73,7 +73,7 @@ export default {
               {
                 url:"https://www.gindre.com/",
                 name:"Gindre",
-                text:"Développement front-end et back-end pour un site vitrine. Projet réalisé seul avec satisfaction du client. Ce projet m'a permis d’appliquer mon expertise pour créer un site fonctionnel et ergonomique.",
+                text:"Développement front-end et back-end pour un site vitrine. Projet réalisé seul avec satisfaction du client. Ce projet m'a permis d’appliquer mon expertise pour créer un site fonctionnel.",
                 media:"/image/screen/gindre.webp",
               },
               {
@@ -87,7 +87,7 @@ export default {
           },
           {
             type:"front-end",
-            typeName:"Projet front end",
+            typeName:"Projets front-end",
             content: [
               {
                 url:"https://inovaya.com/",
@@ -110,13 +110,13 @@ export default {
               {
                 url:"https://katrimmo.com/",
                 name:"Katrimmo",
-                text:"Refonte du style mobile en front-end, réalisée seul. Le site est optimisé pour une meilleure expérience utilisateur. Client satisfait. Ce projet m'a permis de perfectionner mes compétences en conception mobile-first.",
+                text:"Refonte du style mobile en front-end, réalisée seul. Le site est optimisé pour une meilleure expérience utilisateur. Client satisfait. Ce projet m'a permis de perfectionner mes compétences en conception responsive.",
                 media:"/image/screen/kattrimo.webp",
               },
               {
                 url:"https://ridedott.com/fr/",
                 name:"Dott",
-                text:"Refonte complète du style du site et intégration en 8 langues. J’ai respecté un design strict imposé par le client. Le projet a été un succès, et je continue de collaborer pour les évolutions. Cette collaboration continue témoigne de la confiance que le client accorde à mon travail.",
+                text:"Refonte complète du style du site et intégration en 8 langues. J’ai respecté un design <i>pixel-perfect</i> demandé par le client. Le projet a été un succès, et je continue de collaborer pour les évolutions. Cette collaboration continue témoigne de la confiance que le client accorde à mon travail.",
                 media:"/image/screen/dott.webp",
               },
               {
