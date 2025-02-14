@@ -30,7 +30,7 @@ export default {
         </svg>
         <div class="container md:px-12 xl:max-w-[1280px] grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div v-if="!order" :class="{'hidden md:flex ': hideMobileImage}" class="image fade-in overflow-clip rounded-2xl relative h-[300px] lg:h-[400px] fade-in">
-                <img class="image-scroll absolute object-cover inset-0 w-full h-full" :src="image" alt="">
+                <img loading="lazy" class="image-scroll absolute object-cover inset-0 w-full h-full" :src="image" alt="">
             </div>
             <div class="text flex flex-col gap-4">
                 <h2 class="title-5 fade-in">{{ title }}</h2>
@@ -40,7 +40,7 @@ export default {
                 <ButtonSecondary v-if="hasBtn && btn" :title="btn.title" icon="arrow-right" :linkRouter="btn.url" />  
             </div>
             <div v-if="order" :class="{'hidden md:flex ': hideMobileImage}" class="image overflow-clip rounded-2xl relative h-[300px] lg:h-[400px] fade-in">
-                <img class="image-scroll absolute object-cover inset-0 w-full h-full" :src="image" alt="">
+                <img loading="lazy" class="image-scroll absolute object-cover inset-0 w-full h-full" :src="image" alt="">
             </div>
         </div>
         <svg v-if="bg" class="bubble bottom pointer-events-none  hidden md:block  fill-primary-100 rotate-180 bottom-0 translate-y-[99%] absolute z-40" xmlns="http://www.w3.org/2000/svg" viewBox="-0.1 -1175.1 3000 1177">
