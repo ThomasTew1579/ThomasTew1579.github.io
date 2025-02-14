@@ -15,7 +15,7 @@ export default {
         <div class="wrapper bg-black md:max-h-[600px] overflow-clip">
             <div class="gallery grid grid-cols-3 md:grid-cols-4 gap-2">
                 <div v-for="(image, index) in images" :key="index"  class="card h-40 md:h-80 ">
-                    <img class="w-full h-full object-cover max-md:aspect-square md:rounded-md" :src="image" alt="">
+                    <img loading="lazy" class="w-full h-full object-cover max-md:aspect-square md:rounded-md" :src="image" alt="">
                 </div>
             </div>
         </div>
