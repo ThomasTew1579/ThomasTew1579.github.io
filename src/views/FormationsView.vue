@@ -14,6 +14,16 @@ export default {
 <template>
   <HeroImage title="Formations" image="/image/illustrations/illu-form.webp" />
 
+  <div class="container mx-auto max-w-[1000px] px-4 md:mb-12 flex flex-col gap-4 text-center">
+    <h2 class="title-5 fade-in">
+      Formation en continue
+    </h2>
+    <p class="text-center fade-in">
+      En tant que développeur web passionné, je me consacre à une formation continue en autodidacte pour perfectionner mes compétences et explorer les dernières avancées technologiques. Je réalise une veille régulière pour rester informé des nouveautés en développement front-end, des frameworks JavaScript aux outils de design comme Tailwind CSS. Mes projets personnels me permettent d’expérimenter de nouvelles approches, d’optimiser mes pratiques et de résoudre des problématiques techniques concrètes. Cette démarche proactive m’aide à offrir des solutions innovantes et adaptées aux besoins des utilisateurs et des entreprises.
+    </p>
+
+  </div>
+
   <Damier title="Développeur Web" :order = "true" image="/image/formation/form-dev.webp" >
     J’ai suivi une formation en ligne complète en développement web, me permettant d’acquérir une solide maîtrise des langages et technologies essentielles tels que HTML, CSS, JavaScript, PHP, ainsi que des frameworks comme React et WordPress. Cette formation m’a permis de développer des compétences pratiques en création de sites web, allant du front-end au back-end, en passant par l’intégration de bases de données et la gestion de serveurs. Grâce à cette formation, j’ai appris à m’adapter aux exigences du marché actuel et à rester à jour avec les technologies les plus utilisées dans le domaine du web. 
    </Damier>

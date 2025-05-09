@@ -15,32 +15,39 @@ export default {
             typeName:"Projet full stack",
             content: [
             {
+                url:"https://insereco93.com/",
+                name:"Inser'Eco93",
+                text:"Développement front-end et back-end pour  un site institutionnel et informatif destiné à promouvoir l'insertion professionnelle en Seine-Saint-Denis. Plus précisément, il s'agit d'un site associatif et de mise en réseau qui facilite les interactions entre les structures d’insertion par l’activité économique (SIAE), les entreprises et les candidats en recherche d’opportunités d’insertion.",
+                media:"/image/screen/insereco.webp",
+              },
+            {
+                url:"https://www.famoco.com/",
                 name:"Famoco ",
-                text:"Développement front-end et back-end pour un site vitrine. Projet réalisé seul avec satisfaction du client. Ce projet m'a permis d’appliquer mon expertise pour créer un site fonctionnel et ergonomique.",
+                text:"Développement front-end et back-end pour un un site vitrine et institutionnel destiné aux entreprises (B2B). Il présente les produits et solutions de la marque tout en servant de point d'information pour les clients et partenaires.",
                 media:"/image/screen/famoco.webp",
               },
             {
               url:"https://www.pourquery.fr/",
                 name:"Pourquery",
-                text:"Développement front-end et back-end pour un site vitrine. Projet réalisé seul avec satisfaction du client. Ce projet m'a permis d’appliquer mon expertise pour créer un site fonctionnel et ergonomique.",
+                text:"Développement front-end et back-end pour un site vitrine et institutionnel destiné aux entreprises (B2B). Projet réalisé seul avec satisfaction du client. Ce projet m'a permis d’appliquer mon expertise pour créer un site fonctionnel et ergonomique.",
                 media:"/image/screen/pourquery.webp",
               },
               {
                 url:"https://urps-mk-ara.org/",
                 name:"URPS MK ARA",
-                text:"Création d’un filtre d’archives et d’une carte interactive en front-end et back-end. Client très satisfait du résultat. Cette solution technique complexe a amélioré considérablement l'expérience utilisateur en facilitant la recherche d’informations.",
+                text:"Création site institutionnel et informatif destiné aux masseurs-kinésithérapeutes libéraux d'Auvergne-Rhône-Alpes comportant filtre d’archives et d’une carte interactive en front-end et back-end. Client très satisfait du résultat. Cette solution technique complexe a amélioré considérablement l'expérience utilisateur en facilitant la recherche d’informations.",
                 media:"/image/screen/urps-mk-ara.webp",
               },
               {
                 url:"https://pilot-in.com/",
                 name:"Pilot'in",
-                text:"Premier gros projet full-stack réalisé seul. Le client a été satisfait du développement front-end et back-end. Cette réalisation a marqué une étape importante dans ma carrière en consolidant mes compétences techniques et ma gestion de projets d'envergure.",
+                text:"Premier projet d'ampleur en full-stack réalisé seul. Le client a été satisfait du développement front-end et back-end. Cette réalisation a marqué une étape importante dans ma carrière en consolidant mes compétences techniques et ma gestion de projets d'envergure.",
                 media:"/image/screen/pilotin.webp",
               },
               {
                 url:"https://neoloc-immobilier.fr/",
                 name:"Neoloc",
-                text:"Refonte totale du site vitrine en front-end et back-end sans maquette. Résultat satisfaisant, le client continue de collaborer. J’ai su proposer des solutions efficaces pour répondre aux attentes du client tout en offrant une navigation optimisée.",
+                text:"Refonte totale du site vitrine et immobilier destiné aux propriétaires et locataires. Réalisé en front-end et back-end sans maquette. Résultat satisfaisant, le client continue de collaborer. J’ai su proposer des solutions efficaces pour répondre aux attentes du client tout en offrant une navigation optimisée.",
                 media:"/image/screen/neoloc.webp",
               },
               {
@@ -55,11 +62,13 @@ export default {
                 media:"/image/screen/serpol.webp",
               },
               {
+                url:"https://serfimtic.com/",
                 name:"Serfim TIC",
                 text:"Développement front-end et back-end. Site structuré et performant livré avec satisfaction du client. Ce projet a renforcé ma capacité à concevoir des solutions stables pour des entreprises à forte exigence technique.",
                 media:"/image/screen/serfimtic.webp",
               },
               {
+                url:"https://terenvie.fr/",
                 name:"Terenvie",
                 text:"Développement front-end et back-end pour cette branche de Serfim. Résultats très positifs et client satisfait. J’ai assuré un développement fluide et respecté les délais tout en garantissant une qualité optimale.",
                 media:"/image/screen/terrenvie.webp",
@@ -135,7 +144,7 @@ export default {
                 url:"https://www.biens-surs.fr/",
                 name:"Biens Sûrs",
                 text:"Développement front-end en équipe pour un promoteur immobilier. Le client a apprécié le design et la performance du site. Ce projet a permis d’allier esthétique et fonctionnalité pour une expérience utilisateur optimale.",
-                media:"/image/screen/manerty.webp",
+                media:"/image/screen/bienssurs.webp",
               },
               {
                 url:"https://thermiconseil.com/",

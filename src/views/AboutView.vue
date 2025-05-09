@@ -88,7 +88,7 @@ export default {
       Avec plus de 15 ans d’expérience en guitare et basse, et 10 ans en tant que chanteur, la musique a toujours été une source d’inspiration et d’expression pour moi. J'ai joué dans un groupe de reprises punk rock, avec plusieurs performances scéniques à mon actif. Cette expérience m'a appris à collaborer efficacement au sein d’équipes créatives et à gérer des projets collectifs. Mon objectif actuel est d’apprendre le violon pour interpréter des bandes originales de films et de jeux vidéo, ce qui reflète ma quête constante de maîtrise technique et créative.
     </DamierAbout>
 
-    <DamierAbout title="Photographie" :order = "false" image="/image/about/gallery/DSC00139.webp" >
+    <DamierAbout title="Photographie" :order = "false" image="/image/about/gallery/DSC07087.webp" >
       Depuis 4 ans, je me passionne pour la photographie, notamment dans le domaine du sport et des concerts. J'utilise des longues focales pour capturer le mouvement avec précision, une approche qui demande autant de rigueur que de créativité.
     </DamierAbout>
 
