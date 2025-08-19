@@ -8,6 +8,16 @@ export default {
     data() {
       return {
         experiences :  [
+        {
+            label:'Photographe / Vidéaste',
+            icon:'camera',
+            texts:[
+                "Shooting et montage de vidéos pour campagnes de communication",
+                "Couverture photo d ’événements public",
+                "Collaboration avec équipes techniques et artistiques",
+            ],
+            drawer:"J’accompagne des associations dans la valorisation de leurs événements à travers des shootings photo et des captations vidéo, en concert comme en compétition sportive. Mon approche vise à retranscrire l’énergie, l’engagement et l’émotion des participants, tout en répondant aux besoins de communication et de mise en valeur des actions associatives. J’ai eu l’opportunité de travailler sur des projets variés, allant de la couverture d’événements sportifs à la réalisation de vidéos promotionnelles, en passant par la création de contenus pour les réseaux sociaux. Cette expérience m’a permis de développer une sensibilité artistique et une capacité à capturer des moments clés, tout en collaborant étroitement avec les équipes techniques et artistiques pour garantir un rendu final de qualité.",
+          },
           {
             label:'Développeur Full Stack - Pilot’in',
             icon:'code',
