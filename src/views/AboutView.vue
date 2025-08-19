@@ -92,7 +92,7 @@ export default {
       Depuis 4 ans, je me passionne pour la photographie, notamment dans le domaine du sport et des concerts. J'utilise des longues focales pour capturer le mouvement avec précision, une approche qui demande autant de rigueur que de créativité.
     </DamierAbout>
 
-    <GalleryScroll :images="imageGallery" />
+    <!-- <GalleryScroll :images="imageGallery" /> -->
 
     <DamierAbout title="Clip vidéo" :order = "true" image="/image/about/redlight.webp" >
       En tant qu’éclairagiste, caméraman, monteur et décorateur, j’ai réalisé une dizaine de clips musicaux pour divers groupes lyonnais. Cette expérience m'a permis de développer une approche technique approfondie, ainsi qu'une sensibilité artistique.

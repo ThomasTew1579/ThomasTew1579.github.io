@@ -8,6 +8,16 @@ export default {
     data() {
       return {
         experiences :  [
+            {
+            label:'Photographe / Vidéaste - Indépendant',
+            icon:'camera',
+            texts:[
+                "Shooting et montage de vidéos pour campagnes de communication",
+                "Couverture photo d ’événements publics et privés",
+                "Collaboration avec équipes techniques et artistique",
+            ],
+            drawer:"J’accompagne des associations dans la valorisation de leurs événements à travers des shootings photo et des captations vidéo, en concert comme en compétition sportive. Mon approche vise à retranscrire l’énergie, l’engagement et l’émotion des participants, tout en répondant aux besoins de communication et de mise en valeur des actions associatives.",
+          },
           {
             label:'Développeur Full Stack - Pilot’in',
             icon:'code',
@@ -248,6 +258,7 @@ export default {
             <p class="text">
                 {{xp.drawer}}
             </p>
+            <ButtonSecondary v-if="hasBtn && btn" :title="btn.title" icon="arrow-right" :link="btn.url" />  
         </div>
     </section>
 </template>
